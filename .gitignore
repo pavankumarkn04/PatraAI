@@ -1,0 +1,17 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.py[cod]
+evaluation/results-live.jsonl
+evaluation/report-live.json
+evaluation/pdf-samples-live.json
+evaluation/translation-live.json
+evaluation/workspace/
+evaluation/results/cache/
+.pytest_cache/
+# Editor and tool artefacts
+tempCodeRunnerFile.*
+/~/
+# Word lock files and the superseded report draft (final report is in docs/)
+~$*
+PatraAI_CS3235_Report_DRAFT.docx

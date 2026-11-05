@@ -1,0 +1,2322 @@
+{
+ "label": "before",
+ "signature": {
+  "analysis_service": "ollama",
+  "model": "qwen3.5:4b",
+  "vision_model": "qwen3.5:4b",
+  "single_call_chars": 9000,
+  "field_evidence_chars": 9000,
+  "summary_sections": 5,
+  "summary_section_chars": 4500,
+  "qa_top_k": 4,
+  "qa_chunk_chars": 1200,
+  "summary_words": 150,
+  "prompt_version": "general-purpose-v2"
+ },
+ "documents": [
+  {
+   "document": "cs3235-mini-project-sheet.docx",
+   "pages": 9,
+   "scanned_pages": [],
+   "characters": 3129,
+   "detected_language": "English",
+   "stages": {
+    "text extraction": 0.261,
+    "ocr": 0.0,
+    "language detection": 0.0007,
+    "analysis (fields + summary)": 60.61,
+    "categorisation": 0.0036,
+    "retrieval (one question)": 0.0002
+   },
+   "ocr_calls": [],
+   "analysis_calls": [
+    {
+     "mode": "document",
+     "seconds": 60.6,
+     "images": 0,
+     "prompt_eval_count": 1384,
+     "eval_count": 328,
+     "prompt_eval_seconds": 24.17,
+     "eval_seconds": 36.13,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 24.93,
+     "cached_seconds": 0.0,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ಈ ದಾಖಲೆಯು ಸಿ. ಎಸ್. 3235 ಪದವಿಪೂರ್ವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಐದು ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ ಯೋಜನೆಯ ಕಲ್ಪನೆಗಳನ್ನು ರೂಪಿಸುತ್ತದೆ, ಇದು ಭಾರತ್ ಜೆನ್ ಮತ್ತು ಎಐ4ಭಾರತ್ನಂತಹ ಮಾದರಿಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಭಾರತೀಯ ಭಾಷೆಯ ಅನ್ವಯಿಕೆಗಳ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುತ್ತದೆ. ವಿದ್ಯಾರ್ಥಿಗಳು ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯಮಾಪನ ಮಾಪನಗಳೊಂದಿಗೆ ಎಂಡ್-ಟು-ಎಂಡ್ ವ್ಯವಸ್ಥೆಗಳನ್ನು ನಿರ್ಮಿಸಬೇಕು.",
+      "main_points": [
+       "3-4 ವಿದ್ಯಾರ್ಥಿಗಳ ತಂಡಗಳಲ್ಲಿ ಬಳಸಬಹುದಾದ ಭಾರತೀಯ ಭಾಷೆಯ ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆಯ ಅಪ್ಲಿಕೇಶನ್ಗಳನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿ."
+      ],
+      "fields": {
+       "document_title": "ಎಐ4ಭಾರತ್ ಮತ್ತು ಭಾರತ್ ಜೆನ್ ಸಿಎಸ್3235 ಪದವಿಪೂರ್ವ ಎಲ್ಎಲ್ಎಂ/ಮಲ್ಟಿಮೋಡಲ್ ಎಐ ಯೋಜನೆಗಳನ್ನು ಬಳಸುವ ಸಣ್ಣ ಯೋಜನೆಗಳು",
+       "document_type": "ಯೋಜನೆಯ ಪ್ರಸ್ತಾವನೆ",
+       "issuing_department": "CS3235 ಕೋರ್ಸ್ ತಂಡ",
+       "date": "October 2026",
+       "eligibility_criteria": [
+        "ಪದವಿಪೂರ್ವ ವಿದ್ಯಾರ್ಥಿಗಳು"
+       ],
+       "required_documents": [
+        "ಮುಂಭಾಗದ ಡೆಮೊ ಮತ್ತು ದಾಖಲೆಗಳೊಂದಿಗೆ ಗಿಟ್ಹಬ್ ಭಂಡಾರ"
+       ],
+       "application_procedure": [
+        "ಸೂಚಿಸಲಾದ ಮಾದರಿಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಭಾರತೀಯ ಭಾಷೆಯ ಎಂಡ್-ಟು-ಎಂಡ್ ಎಐ ಅಪ್ಲಿಕೇಶನ್ಗಳನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿ.",
+        "ಪರೀಕ್ಷಾ ಪ್ರಕರಣಗಳು, ವೈಫಲ್ಯ ವಿಶ್ಲೇಷಣೆ ಮತ್ತು ಬಳಸಬಹುದಾದ ಮುಂಭಾಗ ಸೇರಿದಂತೆ ಯೋಜನೆಯನ್ನು ಸಲ್ಲಿಸಿ.",
+        "ಪರಿಮಾಣಾತ್ಮಕ ಪರೀಕ್ಷೆ ಮತ್ತು ದೋಷ ವಿಶ್ಲೇಷಣೆಯನ್ನು ಸಲ್ಲಿಕೆಯಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+       ]
+      },
+      "additional_fields": [
+       {
+        "label": "ಸೂಚಿಸಲಾದ ತಂಡದ ಗಾತ್ರ",
+        "value": "3-4 ವಿದ್ಯಾರ್ಥಿಗಳು",
+        "pages": [
+         1
+        ]
+       },
+       {
+        "label": "ಅಗತ್ಯ ಪರೀಕ್ಷಾ ಪ್ರಕರಣಗಳು",
+        "value": "30-50 ಪ್ರಾತಿನಿಧಿಕ ಪರೀಕ್ಷಾ ಪ್ರಕರಣಗಳು",
+        "pages": [
+         7
+        ]
+       },
+       {
+        "label": "ಮುಂಚೂಣಿ ಉದಾಹರಣೆಗಳು",
+        "value": "ಗ್ರೇಡಿಯೋ/ಸ್ಟ್ರೀಮ್ಲಿಟ್/ರಿಯಾಕ್ಟ್",
+        "pages": [
+         7
+        ]
+       }
+      ],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "docx-01",
+     "question": "Which BharatGen model is suggested for the Indian Document Understanding Tool?",
+     "seconds": 24.65,
+     "error": "",
+     "answer": "The document suggests using **BharatGen Patram** vision-language model for the Indian Document Understanding Tool.",
+     "answer_language": "English",
+     "answer_pages": [
+      4
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 24.64,
+       "images": 0,
+       "prompt_eval_count": 1178,
+       "eval_count": 40,
+       "prompt_eval_seconds": 20.25,
+       "eval_seconds": 4.15,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": "Patram"
+    },
+    {
+     "id": "docx-02",
+     "question": "How many representative test cases are required?",
+     "seconds": 20.56,
+     "error": "",
+     "answer": "The document requires **30–50** representative test cases.",
+     "answer_language": "English",
+     "answer_pages": [
+      9
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 20.56,
+       "images": 0,
+       "prompt_eval_count": 1172,
+       "eval_count": 30,
+       "prompt_eval_seconds": 17.37,
+       "eval_seconds": 3.14,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "30–50",
+       "30-50",
+       "30 to 50"
+      ]
+     }
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 35.44,
+     "error": "",
+     "answer": "ಈ ದಾಖಲೆಯನ್ನು **CS3235** ಕೋರ್ಸ್ ಮತ್ತು **Mini Projects using AI4Bharat & BharatGen** ಪ್ರಾಜೆಕ್ಟ್ಗಳಿಗೆ ಸಂಬಂಧಿಸಿದವರು ಹೊರಡಿಸಿದ್ದಾರೆ. ಇದು ಒಂದು ಅಂಡರ್ಗ್ರ್ಯೂಡೇಟ್ LLM / ಮಲ್ಟಿಮೋಡಲ್ ಆಯ್ಕೆಯ ದಾಖಲಾಗಿದೆ, ಮತ್ತು ಬಳಕೆದಾರರಿಗೆ **CS3235 | Mini-Project Ideas • October 2026** ಎಂದು ಸೂಚಿಸುತ್ತದೆ.",
+     "answer_language": "Kannada",
+     "answer_pages": [
+      1,
+      9
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 35.43,
+       "images": 0,
+       "prompt_eval_count": 1185,
+       "eval_count": 154,
+       "prompt_eval_seconds": 18.02,
+       "eval_seconds": 17.34,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "docx-01",
+     "field": "document_title",
+     "expected": {
+      "any_of": [
+       "Mini Projects using AI4Bharat & BharatGen",
+       "Mini Projects using AI4Bharat and BharatGen"
+      ]
+     },
+     "predicted": "Mini Projects using AI4Bharat & BharatGen CS3235 Undergraduate LLM / Multimodal AI Projects",
+     "correct": false
+    },
+    {
+     "case": "docx-02",
+     "field": "important_instructions",
+     "expected": {
+      "any_of": [
+       [
+        "30–50 representative test cases"
+       ],
+       [
+        "30-50 representative test cases"
+       ]
+      ]
+     },
+     "predicted": null,
+     "correct": false
+    }
+   ],
+   "analysis": {
+    "document_type": "Project Proposal",
+    "language": "English",
+    "summary": "This document outlines five AI project ideas for CS3235 undergraduates, focusing on Indian-language applications using models like BharatGen and AI4Bharat. Students must build end-to-end systems with specific evaluation metrics.",
+    "main_points": [
+     "Develop usable Indian-language AI apps in teams of 3-4 students."
+    ],
+    "fields": {
+     "document_title": "Mini Projects using AI4Bharat & BharatGen CS3235 Undergraduate LLM / Multimodal AI Projects",
+     "document_type": "Project Proposal",
+     "issuing_department": "CS3235 Course Team",
+     "date": "October 2026",
+     "eligibility_criteria": [
+      "Undergraduate students"
+     ],
+     "required_documents": [
+      "GitHub repository with frontend demo and documentation"
+     ],
+     "application_procedure": [
+      "Develop end-to-end Indian-language AI applications using suggested models.",
+      "Submit project including test cases, failure analysis, and usable frontend.",
+      "Ensure quantitative testing and error analysis are included in the submission."
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "issuing_department": [
+      9
+     ],
+     "date": [
+      9
+     ],
+     "document_type": [
+      9
+     ],
+     "eligibility_criteria": [
+      1
+     ],
+     "required_documents": [
+      7
+     ],
+     "application_procedure": [
+      7
+     ]
+    },
+    "additional_fields": [
+     {
+      "label": "Suggested Team Size",
+      "value": "3–4 students",
+      "pages": [
+       1
+      ]
+     },
+     {
+      "label": "Required Test Cases",
+      "value": "30–50 representative test cases",
+      "pages": [
+       7
+      ]
+     },
+     {
+      "label": "Frontend Examples",
+      "value": "Gradio/Streamlit/React",
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "summary_coverage": {
+     "sections": 1,
+     "characters_used": 3129,
+     "characters_total": 3129
+    },
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [],
+    "category": "other"
+   },
+   "total_seconds": 166.4
+  },
+  {
+   "document": "cbse-three-language-press-release-2026.pdf",
+   "pages": 4,
+   "scanned_pages": [],
+   "characters": 6931,
+   "detected_language": "English",
+   "stages": {
+    "text extraction": 0.886,
+    "ocr": 0.0,
+    "language detection": 0.0033,
+    "analysis (fields + summary)": 66.83,
+    "categorisation": 0.0002,
+    "retrieval (one question)": 0.0004
+   },
+   "ocr_calls": [],
+   "analysis_calls": [
+    {
+     "mode": "document",
+     "seconds": 40.94,
+     "images": 0,
+     "prompt_eval_count": 2211,
+     "eval_count": 332,
+     "prompt_eval_seconds": 0.6,
+     "eval_seconds": 38.81,
+     "load_seconds": 0.02
+    },
+    {
+     "mode": "summary",
+     "seconds": 25.86,
+     "images": 0,
+     "prompt_eval_count": 1863,
+     "eval_count": 199,
+     "prompt_eval_seconds": 0.59,
+     "eval_seconds": 23.77,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 27.31,
+     "cached_seconds": 0.0,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ಸಿಬಿಎಸ್ಇ ಎನ್ಇಪಿ 2020ರ ತ್ರಿಭಾಷಾ ನೀತಿಯನ್ನು ಸೆಷನ್ 2026-27 ನಿಂದ ಜಾರಿಗೆ ತರಲು ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಹೊರಡಿಸುತ್ತದೆ, ನಿರ್ದಿಷ್ಟ ವಿನಾಯಿತಿಗಳು ಮತ್ತು ಪರಿವರ್ತನೆಯ ಸಡಿಲಿಕೆಗಳೊಂದಿಗೆ ಮೂರನೇ ಭಾಷೆಯ ಅವಶ್ಯಕತೆಗಳನ್ನು ಪರಿಚಯಿಸುವಾಗ ಹತ್ತನೇ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ ಎಂದು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+      "main_points": [
+       "10ನೇ ತರಗತಿಯು (2026-27) ಆರ್3ಗೆ ಹೊಸ ಬೋರ್ಡ್ ಪರೀಕ್ಷೆಯ ಅಗತ್ಯವಿಲ್ಲದೇ ಹಳೆಯ ದ್ವಿಭಾಷಾ ವ್ಯವಸ್ಥೆಯನ್ನು ಮುಂದುವರಿಸುತ್ತದೆ.",
+       "7-8ನೇ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಈಗಾಗಲೇ ನೋಂದಾಯಿಸದಿದ್ದರೆ, ಒಂಬತ್ತನೇ/ಹತ್ತನೇ ತರಗತಿಯೊಳಗೆ ಮೂರು ಭಾಷೆಗಳನ್ನು ಅಧ್ಯಯನ ಮಾಡಬೇಕು, ಒಂದು ಭಾರತೀಯ ಭಾಷೆಯನ್ನು ಸೇರಿಸುವ 2 ಸ್ಥಳೀಯವಲ್ಲದ ಭಾಷೆಗಳನ್ನು ಪ್ರಾರಂಭಿಸುವವರನ್ನು ಹೊರತುಪಡಿಸಿ.",
+       "ಮೂರನೇ ಭಾಷೆಯನ್ನು (ಆರ್3) ಆಂತರಿಕವಾಗಿ ಮಾತ್ರ ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾಗುತ್ತದೆ; ಈ ಬ್ಯಾಚ್ಗಳು ಹತ್ತನೇ ತರಗತಿಗೆ ಹೋದಾಗ ಯಾವುದೇ ಸಿಬಿಎಸ್ಇ ಬೋರ್ಡ್ ಪರೀಕ್ಷೆ ನಡೆಯುವುದಿಲ್ಲ.",
+       "ಆರನೇ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಹತ್ತನೇ ತರಗತಿಯನ್ನು ತಲುಪಿದ ನಂತರ ಆರ್3 ಬೋರ್ಡ್ ಪರೀಕ್ಷೆಯನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತಾರೆ ಮತ್ತು ಮೀಸಲಾದ ಪಠ್ಯಪುಸ್ತಕಗಳು ಆನ್ಲೈನ್ನಲ್ಲಿ ಲಭ್ಯವಿರುತ್ತವೆ.",
+       "ವಿಶೇಷ ಅಗತ್ಯವಿರುವ ಮಕ್ಕಳು, ಭಾರತದ ಹೊರಗಿನ ಶಾಲೆಗಳು, ಹಿಂದಿರುಗುವ ವಿದೇಶಿ ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ವಲಸೆ ಹೋಗುವ ಪೋಷಕರಿಗೆ ವಿನಾಯಿತಿ ಅನ್ವಯಿಸುತ್ತದೆ."
+      ],
+      "fields": {
+       "document_title": "ಸಿ. ಬಿ. ಎಸ್. ಇ. ತ್ರಿಭಾಷಾ ನೀತಿಯ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಬಿಡುಗಡೆ ಮಾಡಿದೆ.",
+       "document_type": "ಮಾರ್ಗಸೂಚಿಗಳು/ಪತ್ರಿಕಾ ಪ್ರಕಟಣೆ",
+       "issuing_department": "ಸೆಂಟ್ರಲ್ ಬೋರ್ಡ್ ಆಫ್ ಸೆಕೆಂಡರಿ ಎಜುಕೇಶನ್ (ಸಿಬಿಎಸ್ಇ)",
+       "date": "29-06-2026",
+       "important_dates": [
+        "ಶೈಕ್ಷಣಿಕ ಅಧಿವೇಶನ 2026-27",
+        "2026-27 ನಲ್ಲಿ X ವರ್ಗ",
+        "ಒಂಬತ್ತನೇ ತರಗತಿಯು 2026-27 ನಲ್ಲಿ"
+       ],
+       "eligibility_criteria": [
+        "ಷರತ್ತು: ಪ್ರಸ್ತುತ ಶೈಕ್ಷಣಿಕ ವರ್ಷದಂತೆ ಏಳನೇ, ಎಂಟನೇ ಅಥವಾ ಒಂಬತ್ತನೇ ತರಗತಿಯಲ್ಲಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳು 2026-27",
+        "ಷರತ್ತು: ಸಿ. ಬಿ. ಎಸ್. ಇ. ಗೆ ಮಾನ್ಯತೆ ಪಡೆದ ಶಾಲೆಗಳು",
+        "ಪರಿಸ್ಥಿತಿ: ಆರ್. ಪಿ. ಡಬ್ಲ್ಯು. ಡಿ. ಕಾಯಿದೆ 2016ರ ಪ್ರಕಾರ ವಿಶೇಷ ಅಗತ್ಯಗಳನ್ನು ಹೊಂದಿರುವ ಮಕ್ಕಳು"
+       ],
+       "application_procedure": [
+        "ಮೂರನೇ ಭಾಷೆಯ ಆರ್3ಗಾಗಿ ಶಾಲೆ ಆಧಾರಿತ ಆಂತರಿಕ ಮೌಲ್ಯಮಾಪನವನ್ನು ಅನುಸರಿಸಿ"
+       ],
+       "important_instructions": [
+        "ಹೊಸ ನೀತಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ 2026-27 ನಲ್ಲಿ ಹತ್ತನೇ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಯಾವುದೇ ಬೋರ್ಡ್ ಪರೀಕ್ಷೆಯ ಅಗತ್ಯವಿಲ್ಲ.",
+        "ಶಾಲೆಗಳು ದರ್ಜೆಗೆ ಸೂಕ್ತವಾದ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಒದಗಿಸಬೇಕು ಮತ್ತು ಬಹುಭಾಷಾ ಕಲಿಕೆಗೆ ಬೆಂಬಲ ನೀಡಬೇಕು."
+       ]
+      },
+      "additional_fields": [
+       {
+        "label": "ಯೋಜನೆಯ ಹೆಸರು",
+        "value": "ಸಿಬಿಎಸ್ಇ ಶಾಲೆಗಳಿಗೆ ತ್ರಿಭಾಷಾ ನೀತಿ ಅನುಷ್ಠಾನ ಮಾರ್ಗಸೂಚಿಗಳು",
+        "pages": [
+         2
+        ]
+       },
+       {
+        "label": "ವಿನಾಯಿತಿ ವರ್ಗ",
+        "value": "ಭಾರತದ ಹೊರಗೆ ಇರುವ ಶಾಲೆಗಳಿಗೆ ಸ್ಥಳೀಯ ಭಾರತೀಯ ಭಾಷೆಯ ಅವಶ್ಯಕತೆಯಿಂದ ವಿನಾಯಿತಿ ನೀಡಲಾಗಿದೆ.",
+        "pages": [
+         3
+        ]
+       },
+       {
+        "label": "ಶಿಕ್ಷಕರ ನಿಯೋಜನೆ",
+        "value": "ನಿವೃತ್ತ ಶಿಕ್ಷಕರು, ಸ್ನಾತಕೋತ್ತರ ಮತ್ತು ಸಹೋದಯ ಕ್ಲಸ್ಟರ್ಗಳು ಸೇರಿದಂತೆ ಹೊಂದಿಕೊಳ್ಳುವ ಸಿಬ್ಬಂದಿಗೆ ಅವಕಾಶ ನೀಡಲಾಗಿದೆ.",
+        "pages": [
+         4
+        ]
+       }
+      ],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "cbse-01",
+     "question": "What is the date of the press release?",
+     "seconds": 24.52,
+     "error": "",
+     "answer": "The press release was issued on **29-06-2026** in New Delhi.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 24.52,
+       "images": 0,
+       "prompt_eval_count": 2000,
+       "eval_count": 38,
+       "prompt_eval_seconds": 18.64,
+       "eval_seconds": 4.31,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": "29-06-2026"
+    },
+    {
+     "id": "cbse-02",
+     "question": "Out of the three languages, how many must be Bhartiya Bhashas?",
+     "seconds": 23.37,
+     "error": "",
+     "answer": "Out of the three languages opted for, **at least two** must be **Bhartiya Bhashas (native Indian languages)**.",
+     "answer_language": "English",
+     "answer_pages": [
+      2
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 23.37,
+       "images": 0,
+       "prompt_eval_count": 2008,
+       "eval_count": 44,
+       "prompt_eval_seconds": 18.34,
+       "eval_seconds": 4.96,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "two",
+       "2"
+      ]
+     }
+    },
+    {
+     "id": "cbse-03",
+     "question": "In how many scheduled Bhartiya Bhashas are dedicated R3 textbooks for Class VI being made available?",
+     "seconds": 23.94,
+     "error": "",
+     "answer": "Dedicated R3 textbooks for **Class VI** in **22 scheduled Bhartiya Bhashas** are being made available on www.ncert.nic.in.",
+     "answer_language": "English",
+     "answer_pages": [
+      4
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 23.94,
+       "images": 0,
+       "prompt_eval_count": 2013,
+       "eval_count": 53,
+       "prompt_eval_seconds": 18.02,
+       "eval_seconds": 5.87,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": "22"
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 31.17,
+     "error": "",
+     "answer": "ಈ ಪ್ರಕಟಣೆಯನ್ನು (Press Release) **CBSE** (Central Board of Secondary Education) ಹೊರಡಿಸಿದೆ. ಇದನ್ನು ವಿದ್ಯಾಭಿವೃದ್ಧಿ ನಿರ್ವಹಣಾ ಅಧಿಕಾರಿಯಾದ 'ಪ್ರೋಫೆಸರ್ ಮತ್ತು ಡೈರೆಕ್ಟರ್ (Academics)' ಬರೆದುಕೊಂಡಿದ್ದಾರೆ.",
+     "answer_language": "Kannada",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 31.17,
+       "images": 0,
+       "prompt_eval_count": 2012,
+       "eval_count": 107,
+       "prompt_eval_seconds": 19.01,
+       "eval_seconds": 12.1,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "cbse-01",
+     "field": "date",
+     "expected": "29-06-2026",
+     "predicted": "29-06-2026",
+     "correct": true
+    },
+    {
+     "case": "cbse-02",
+     "field": "issuing_department",
+     "expected": {
+      "any_of": [
+       "CBSE",
+       "Central Board of Secondary Education"
+      ]
+     },
+     "predicted": "Central Board of Secondary Education (CBSE)",
+     "correct": true
+    },
+    {
+     "case": "cbse-03",
+     "field": "document_title",
+     "expected": {
+      "any_of": [
+       "CBSE Issues Guidelines on the three-language policy",
+       "Guidelines on the three-language policy"
+      ]
+     },
+     "predicted": "CBSE Issues Guidelines on the three-language policy",
+     "correct": true
+    }
+   ],
+   "analysis": {
+    "document_type": "Guidelines/Press Release",
+    "language": "English",
+    "summary": "CBSE issues guidelines for implementing NEP 2020's three-language policy from Session 2026-27, ensuring Class X students remain unaffected while introducing third language requirements with specific exemptions and transitional relaxations.",
+    "main_points": [
+     "Class X (2026-27) continues the old two-language system without a new board exam requirement for R3.",
+     "Students in Classes VII-VIII must study three languages by Class IX/X if not already enrolled, except those starting 2 non-native languages who add one Bhartiya Bhasha.",
+     "The third language (R3) is assessed internally only; no CBSE Board examination occurs when these batches progress to Class X.",
+     "Class VI students will take the R3 board exam upon reaching Class X and have dedicated textbooks available online.",
+     "Exemptions apply for children with special needs, schools outside India, foreign students returning, and parents migrating states."
+    ],
+    "fields": {
+     "document_title": "CBSE Issues Guidelines on the three-language policy",
+     "document_type": "Guidelines/Press Release",
+     "issuing_department": "Central Board of Secondary Education (CBSE)",
+     "date": "29-06-2026",
+     "important_dates": [
+      "Academic Session 2026–27",
+      "Class X in 2026–27",
+      "Class IX in 2026–27"
+     ],
+     "eligibility_criteria": [
+      "Condition: Students currently in Class VII, VIII, or IX as of Academic Year 2026-27",
+      "Condition: Schools affiliated with CBSE",
+      "Condition: Children with Special Needs per RPwD Act 2016"
+     ],
+     "application_procedure": [
+      "Follow school-based internal assessment for third language R3"
+     ],
+     "important_instructions": [
+      "No Board examination required for Class X students in 2026-27 regarding the new policy",
+      "Schools must provide grade-appropriate resources and support multilingual learning"
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "issuing_department": [
+      4
+     ],
+     "date": [
+      1
+     ],
+     "document_type": [
+      1
+     ],
+     "important_dates": [
+      1
+     ],
+     "eligibility_criteria": [
+      3
+     ],
+     "application_procedure": [
+      3
+     ],
+     "important_instructions": [
+      3
+     ]
+    },
+    "additional_fields": [
+     {
+      "label": "Scheme Name",
+      "value": "Three-Language Policy Implementation Guidelines for CBSE Schools",
+      "pages": [
+       2
+      ]
+     },
+     {
+      "label": "Exemption Category",
+      "value": "Schools situated outside India exempt from native Indian language requirement",
+      "pages": [
+       3
+      ]
+     },
+     {
+      "label": "Teacher Provision",
+      "value": "Flexible staffing including retired teachers, postgraduates and Sahodaya clusters allowed",
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "summary_coverage": {
+     "sections": 1,
+     "characters_used": 6931,
+     "characters_total": 6931
+    },
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [],
+    "summary_retried": true,
+    "category": "notice"
+   },
+   "total_seconds": 198.0
+  },
+  {
+   "document": "telangana-go-bc-welfare-sanction-2026.pdf",
+   "pages": 1,
+   "scanned_pages": [],
+   "characters": 2942,
+   "detected_language": "English",
+   "stages": {
+    "text extraction": 0.09,
+    "ocr": 0.0,
+    "language detection": 0.0005,
+    "analysis (fields + summary)": 90.56,
+    "categorisation": 0.0001,
+    "retrieval (one question)": 0.0005
+   },
+   "ocr_calls": [],
+   "analysis_calls": [
+    {
+     "mode": "document",
+     "seconds": 56.67,
+     "images": 0,
+     "prompt_eval_count": 1516,
+     "eval_count": 304,
+     "prompt_eval_seconds": 21.28,
+     "eval_seconds": 34.37,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "summary",
+     "seconds": 33.87,
+     "images": 0,
+     "prompt_eval_count": 1168,
+     "eval_count": 118,
+     "prompt_eval_seconds": 20.37,
+     "eval_seconds": 13.34,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 18.63,
+     "cached_seconds": 0.0,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ತೆಲಂಗಾಣ ಸರ್ಕಾರದ ಈ ಆದೇಶವು ರೂ. ಹಿಂದುಳಿದ ವರ್ಗಗಳ ಕಲ್ಯಾಣ ಇಲಾಖೆಯ'ತೆಲಂಗಾಣ ಅಧ್ಯಯನ ವಲಯ'ಯೋಜನೆಗೆ ಬಿ. ಇ. ನಿಬಂಧನೆ 2025-6ರ ಅಡಿಯಲ್ಲಿ 25 ಕೋಟಿ ರೂ. [3]",
+      "main_points": [
+       "G.O.Rt.No. 26-ಮಾರ್ಚ್-2026ರ 39ನೇ ದಿನಾಂಕವು ರೂ. ಬಿ. ಇ. ನಿಬಂಧನೆ 2025-6 ನಿಂದ ಬಿ. ಸಿ. ಕಲ್ಯಾಣ ಯೋಜನೆಗೆ 25 ಕೋಟಿ ರೂ."
+      ],
+      "fields": {
+       "document_title": "ಬಜೆಟ್ ಅಂದಾಜುಗಳು 2025-26 ಹಿಂದುಳಿದ ವರ್ಗಗಳ ಕಲ್ಯಾಣ ಯೋಜನೆಗೆ ಆಡಳಿತಾತ್ಮಕ ಅನುಮೋದನೆ",
+       "document_type": "G.O.Rt.No.39",
+       "issuing_department": "ಹಿಂದುಳಿದ ವರ್ಗಗಳ ಕಲ್ಯಾಣ ಇಲಾಖೆ, ತೆಲಂಗಾಣ ಸರ್ಕಾರ",
+       "date": "26-03-2026",
+       "reference_number": "BRO No. 397 and GORt No. 39",
+       "amount": "Rs.25,00,00,000/- (Rupees Twenty Five Crores Only)",
+       "deadline": "ಹಣಕಾಸು ವರ್ಷದ 3ನೇ ತ್ರೈಮಾಸಿಕದವರೆಗಿನ ವೆಚ್ಚ 2025-26",
+       "important_dates": [
+        "18.03.2026-ಹಣಕಾಸು ಆದೇಶದ ದಿನಾಂಕ",
+        "25-11-2006-ಹಿಂದಿನ U. O. ಟಿಪ್ಪಣಿ"
+       ],
+       "application_procedure": "ಆಯುಕ್ತ ಬಿ. ಸಿ. ಕಲ್ಯಾಣ ಸೂಚನೆಗಳ ಅಡಿಯಲ್ಲಿ ಸಂಬಂಧಿತ ಡಿ. ಡಿ. ಓ. ಅವರಿಂದ ಅನುದಾನ ಮಸೂದೆ ಕಾರ್ಯವಿಧಾನ",
+       "important_instructions": [
+        "ಯು. ಓ. ನೀಡಿದ ಸೂಚನೆಗಳನ್ನು ಅನುಸರಿಸಿ. ಟಿಪ್ಪಣಿ ಸಂಖ್ಯೆ. 29875-ಎ/1283/ಎ1/ಬಿಜಿಐ/2006"
+       ]
+      },
+      "additional_fields": [],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "tgorder-01",
+     "question": "What amount is administratively sanctioned in this order?",
+     "seconds": 0.0,
+     "error": "",
+     "answer": "The document states: Rs.25,00,00,000/-.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "source-text match",
+     "model_calls": [],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "Rs.25,00,00,000",
+       "25,00,00,000",
+       "Twenty Five Crores"
+      ]
+     }
+    },
+    {
+     "id": "tgorder-02",
+     "question": "Who signed this government order?",
+     "seconds": 29.05,
+     "error": "",
+     "answer": "**M.Raghunandan Rao**, Principal Secretary to Government (FAC), signed the order on behalf of the Governor of Telangana.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 29.05,
+       "images": 0,
+       "prompt_eval_count": 1302,
+       "eval_count": 52,
+       "prompt_eval_seconds": 23.0,
+       "eval_seconds": 5.9,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "Raghunandan Rao",
+       "M. Raghunandan Rao"
+      ]
+     }
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 29.95,
+     "error": "",
+     "answer": "ಈ ದಾಖಲೆ **ಮಹಾರಾಯನಾಮದಿಂದ** (By Order) ಮತ್ತು ತelangಾನಾದ ಮುಖ್ಯಸ್ಥ ಸಚಿವಾಲಯದ ಪ್ರಧಾನ ಕೃಷ್ಣರಾವ್ ರಾಗುವಂದನ್‌ರ ಹೆಸರಿನಲ್ಲಿ (**M.Raghunandan Rao**, Principal Secretary to Government, FAC) **ಹೊರಡಿಸಲಾಗಿತ್ತು**.",
+     "answer_language": "Kannada",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 29.94,
+       "images": 0,
+       "prompt_eval_count": 1317,
+       "eval_count": 107,
+       "prompt_eval_seconds": 18.0,
+       "eval_seconds": 11.91,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "tgorder-01",
+     "field": "reference_number",
+     "expected": {
+      "any_of": [
+       "G.O.Rt.No. 39",
+       "G.O.Rt.No.39"
+      ]
+     },
+     "predicted": "BRO No. 397 and GORt No. 39",
+     "correct": false
+    },
+    {
+     "case": "tgorder-02",
+     "field": "date",
+     "expected": "26-03-2026",
+     "predicted": "26-03-2026",
+     "correct": true
+    }
+   ],
+   "analysis": {
+    "document_type": "G.O.Rt.No.39",
+    "language": "English",
+    "summary": "This Telangana Government Order sanctions Rs. 25 crores for the Backward Classes Welfare Department's 'Telangana Study Circle' scheme under BE provision 2025-6, covering expenditure up to Q3.",
+    "main_points": [
+     "G.O.Rt.No. 39 dated 26-Mar-2026 administers Rs. 25 crore sanction for BC Welfare Scheme from BE provision 2025-6."
+    ],
+    "fields": {
+     "document_title": "Budget Estimates 2025-26 Administrative Sanction for Backward Classes Welfare Scheme",
+     "document_type": "G.O.Rt.No.39",
+     "issuing_department": "Backward Classes Welfare Department, Telangana Government",
+     "date": "26-03-2026",
+     "reference_number": "BRO No. 397 and GORt No. 39",
+     "amount": "Rs.25,00,00,000/- (Rupees Twenty Five Crores Only)",
+     "deadline": "Expenditure up to 3rd quarter of FY 2025-26",
+     "important_dates": [
+      "18.03.2026 - Finance Order Date",
+      "25-11-2006 - Previous U.O Note"
+     ],
+     "application_procedure": "Grant-in-aid Bill procedure by concerned DDO under Commissioner BC Welfare instructions",
+     "important_instructions": [
+      "Follow instructions from U.O. Note No. 29875-A/1283/A1/BG.I/2006"
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "issuing_department": [
+      1,
+      2
+     ],
+     "date": [
+      2
+     ],
+     "reference_number": [
+      2
+     ],
+     "amount": [
+      2
+     ],
+     "deadline": [
+      2
+     ],
+     "important_dates": [
+      2
+     ],
+     "application_procedure": [
+      4
+     ],
+     "important_instructions": [
+      3
+     ],
+     "document_type": [
+      1
+     ]
+    },
+    "additional_fields": [],
+    "summary_coverage": {
+     "sections": 1,
+     "characters_used": 2942,
+     "characters_total": 2942
+    },
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [],
+    "summary_retried": true,
+    "category": "scholarship"
+   },
+   "total_seconds": 168.3
+  },
+  {
+   "document": "central-obc-ncl-certificate-format.pdf",
+   "pages": 2,
+   "scanned_pages": [
+    2
+   ],
+   "characters": 3888,
+   "detected_language": "English",
+   "stages": {
+    "text extraction": 0.124,
+    "ocr": 220.39,
+    "language detection": 0.0008,
+    "analysis (fields + summary)": 117.27,
+    "categorisation": 0.0015,
+    "retrieval (one question)": 0.0016
+   },
+   "ocr_calls": [
+    {
+     "mode": "ocr",
+     "seconds": 220.22,
+     "images": 1,
+     "prompt_eval_count": 1958,
+     "eval_count": 1134,
+     "prompt_eval_seconds": 86.38,
+     "eval_seconds": 133.47,
+     "load_seconds": 0.02
+    }
+   ],
+   "analysis_calls": [
+    {
+     "mode": "document",
+     "seconds": 67.78,
+     "images": 0,
+     "prompt_eval_count": 2446,
+     "eval_count": 270,
+     "prompt_eval_seconds": 35.45,
+     "eval_seconds": 32.03,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "summary",
+     "seconds": 49.45,
+     "images": 0,
+     "prompt_eval_count": 2098,
+     "eval_count": 106,
+     "prompt_eval_seconds": 37.23,
+     "eval_seconds": 12.01,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 26.32,
+     "cached_seconds": 0.001,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ಈ ದಾಖಲೆಯು ಭಾರತದ ಕೇಂದ್ರೀಯ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳಿಗೆ ಅಗತ್ಯವಿರುವ ಒಬಿಸಿ-ಎನ್ಸಿಎಲ್ ಪ್ರಮಾಣಪತ್ರಗಳ ಸ್ವರೂಪವನ್ನು ವಿವರಿಸುತ್ತದೆ, ಅಭ್ಯರ್ಥಿಯ ಮಾಹಿತಿ, ರೆಸಿಡೆನ್ಸಿ ಮಾನದಂಡಗಳು, ನಿರ್ದಿಷ್ಟ ಒಎಂ ಸಂಖ್ಯೆಗಳ ಆಧಾರದ ಮೇಲೆ ಕ್ರೀಮಿ ಲೇಯರ್ ಹೊರಗಿಡುವಿಕೆಗಳು ಮತ್ತು 1993 ರಿಂದ 2017 ರವರೆಗಿನ ಸರ್ಕಾರಿ ನಿರ್ಣಯದ ದಿನಾಂಕಗಳ ಸಮಗ್ರ ಪಟ್ಟಿಯನ್ನು ವಿವರಿಸುತ್ತದೆ.",
+      "main_points": [
+       "ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಸಚಿವಾಲಯದ ನಿರ್ಣಯ ಸಂಖ್ಯೆ 1ರ ಅಡಿಯಲ್ಲಿ ಪ್ರಮಾಣಪತ್ರವು ಹಿಂದುಳಿದ ವರ್ಗದ ಸ್ಥಾನಮಾನವನ್ನು ಪ್ರಮಾಣೀಕರಿಸಬೇಕು. ಕೇಂದ್ರ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಪ್ರವೇಶಕ್ಕಾಗಿ ದಿನಾಂಕ * * * *."
+      ],
+      "fields": {
+       "document_title": "ಫಾರ್ಮ್-ಒಬಿಸಿ-ಎನ್ಸಿಎಲ್ ಪ್ರಮಾಣಪತ್ರದ ಸ್ವರೂಪ",
+       "document_type": "ಭಾರತ ಸರ್ಕಾರದ ಅಡಿಯಲ್ಲಿರುವ ಕೇಂದ್ರೀಯ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳಿಗೆ ಪ್ರವೇಶಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಇತರ ಹಿಂದುಳಿದ ವರ್ಗಗಳು (ಎನ್. ಸಿ. ಎಲ್.) ಸಲ್ಲಿಸಬೇಕಾದ ಪ್ರಮಾಣಪತ್ರದ ನಮೂನೆ",
+       "issuing_department": "ಭಾರತ ಸರ್ಕಾರ, ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಸಬಲೀಕರಣ ಸಚಿವಾಲಯ/ಜಿಲ್ಲಾ ಮ್ಯಾಜಿಸ್ಟ್ರೇಟ್ ಅಥವಾ ಇತರ ಸಕ್ಷಮ ಪ್ರಾಧಿಕಾರ",
+       "reference_number": "Resolution No. **** as per Annexure; OM Nos 36012/22/93- Estt (SCT) to 36033/1/2013-Estt (Res)",
+       "eligibility_criteria": [
+        "ಭಾರತ ಸರ್ಕಾರದ ನಿರ್ಣಯದ ಅಡಿಯಲ್ಲಿ ಹಿಂದುಳಿದ ವರ್ಗವೆಂದು ಗುರುತಿಸಲಾದ ಸಮುದಾಯಕ್ಕೆ ಸೇರಿದವರು",
+        "ಕುಟುಂಬವು ಸಾಮಾನ್ಯವಾಗಿ ನಿರ್ದಿಷ್ಟ ಜಿಲ್ಲೆ/ಪಟ್ಟಣ/ಗ್ರಾಮದಲ್ಲಿ ವಾಸಿಸುತ್ತದೆ.",
+        "ವೇಳಾಪಟ್ಟಿಯಲ್ಲಿ ಪಟ್ಟಿ ಮಾಡಲಾದ ಕ್ರೀಮಿ ಲೇಯರ್ ವ್ಯಕ್ತಿಗಳಿಗೆ ಸೇರಿಲ್ಲ"
+       ],
+       "required_documents": [
+        "ಅಭ್ಯರ್ಥಿಯ ಜಾತಿಯ ನಿರ್ದಿಷ್ಟ ನಿರ್ಣಯ ಸಂಖ್ಯೆಗಳು ಮತ್ತು ದಿನಾಂಕಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುವ ಅನುಬಂಧ"
+       ],
+       "application_procedure": "ಅರ್ಜಿಯ ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡಿ, ಅನ್ವಯಿಸಲಾಗದ ಪದಗಳನ್ನು ಅಳಿಸಿ, ಸಕ್ಷಮ ಪ್ರಾಧಿಕಾರದ ಮುಂದೆ ಮುದ್ರೆಯೊಂದಿಗೆ ಸಹಿ ಮಾಡಿ.",
+       "important_instructions": [
+        "ಇತ್ತೀಚಿನ ಮಾರ್ಗಸೂಚಿಗಳಿಗಾಗಿ http://www.ncbc.nic.in ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಲಿಂಗ ಅಥವಾ ಕುಟುಂಬದ ಸ್ಥಿತಿಗೆ ಅನ್ವಯಿಸದ ಪದಗಳನ್ನು ಅಳಿಸಿ",
+        "ಬೇರೆ ಯಾವುದೇ ಪ್ರಾಧಿಕಾರವು ನೀಡುವ ಪ್ರಮಾಣಪತ್ರವನ್ನು ತಿರಸ್ಕರಿಸಲಾಗುತ್ತದೆ."
+       ]
+      },
+      "additional_fields": [],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "obc-01",
+     "question": "Who can issue this certificate?",
+     "seconds": 49.97,
+     "error": "",
+     "answer": "The authorities competent to issue Caste Certificates (OBC-NCL) are:\n- District Magistrate / Additional Magistrate / Collector / Deputy Commissioner\n- Chief Presidency Magistrate / Additional Chief Presidency Magistrate / Presidency Magistrate\n- Revenue Officer not below the rank of Tehsildar\n- Sub-Divisional Officer of the area where the candidate and/or his family resides",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 49.96,
+       "images": 0,
+       "prompt_eval_count": 2232,
+       "eval_count": 95,
+       "prompt_eval_seconds": 39.19,
+       "eval_seconds": 10.53,
+       "load_seconds": 0.02
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "District Magistrate",
+       "Deputy Commissioner"
+      ]
+     }
+    },
+    {
+     "id": "obc-02",
+     "question": "Which website gives the latest guidelines on the Central List of OBCs?",
+     "seconds": 117.84,
+     "error": "",
+     "answer": "Visit http://www.ncbc.nic.in for latest guidelines and updates on the Central List of State-wise OBCs.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 21.24,
+       "images": 0,
+       "prompt_eval_count": 2241,
+       "eval_count": 25,
+       "prompt_eval_seconds": 18.43,
+       "eval_seconds": 2.78,
+       "load_seconds": 0.01
+      },
+      {
+       "mode": "question",
+       "seconds": 96.59,
+       "images": 0,
+       "prompt_eval_count": 2358,
+       "eval_count": 49,
+       "prompt_eval_seconds": 44.81,
+       "eval_seconds": 5.85,
+       "load_seconds": 45.54
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "ncbc.nic.in",
+       "www.ncbc.nic.in"
+      ]
+     }
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 34.23,
+     "error": "",
+     "answer": "ಈ ಸ್ವಲ್ಪದಾಖಲೆ (FORM-OBC-NCL) ಅಧಿಕೃತವಾಗಿ **ಜಿಲ್ಲಾ ಮ್ಯಾಗಸ್ಟ್ರೇಟ್ / ಡೀಪುಟಿ ಕಮಿಸನರ್** ಅಥವಾ ಯಾವುದೇ ಇನ್ನೊಂದು ಪೂರಕ ಸಾಮರ್ಥ್ಯ ಹೊಂದಿದ ಆಡಳಿತಗಾರರು (District Magistrate, Deputy Commissioner or Any other Competent Authority) ಬರೆದಿದ್ದಾರೆ.",
+     "answer_language": "Kannada",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "whole document + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 34.22,
+       "images": 0,
+       "prompt_eval_count": 2247,
+       "eval_count": 129,
+       "prompt_eval_seconds": 19.72,
+       "eval_seconds": 14.38,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "obc-01",
+     "field": "document_type",
+     "expected": {
+      "any_of": [
+       "Certificate",
+       "Certificate Format",
+       "OBC-NCL Certificate"
+      ]
+     },
+     "predicted": "Form of Certificate to be produced by Other Backward Classes (NCL) applying for admission to Central Educational Institutions under the Government of India",
+     "correct": true
+    },
+    {
+     "case": "obc-02",
+     "field": "issuing_department",
+     "expected": {
+      "any_of": [
+       "District Magistrate",
+       "Deputy Commissioner",
+       "Competent Authority"
+      ]
+     },
+     "predicted": "Government of India, Ministry of Social Justice and Empowerment / District Magistrate or other competent authority",
+     "correct": true
+    }
+   ],
+   "analysis": {
+    "document_type": "Form of Certificate to be produced by Other Backward Classes (NCL) applying for admission to Central Educational Institutions under the Government of India",
+    "language": "English",
+    "summary": "This document outlines the format for OBC-NCL certificates required by Central Educational Institutions in India, detailing candidate information, residency criteria, Creamy Layer exclusions based on specific OM numbers, and a comprehensive list of Government Resolution dates from 1993 to 2017.",
+    "main_points": [
+     "Certificate must certify backward class status under Ministry of Social Justice resolution No. dated **** for Central Educational Institutions admission."
+    ],
+    "fields": {
+     "document_title": "FORM-OBC-NCL Certificate Format",
+     "document_type": "Form of Certificate to be produced by Other Backward Classes (NCL) applying for admission to Central Educational Institutions under the Government of India",
+     "issuing_department": "Government of India, Ministry of Social Justice and Empowerment / District Magistrate or other competent authority",
+     "reference_number": "Resolution No. **** as per Annexure; OM Nos 36012/22/93- Estt (SCT) to 36033/1/2013-Estt (Res)",
+     "eligibility_criteria": [
+      "Belongs to community recognized as backward class under Govt of India resolution",
+      "Family ordinarily resides in specified District/Town/Village",
+      "Does not belong to Creamy Layer persons listed in Schedule"
+     ],
+     "required_documents": [
+      "Annexure listing specific Resolution Numbers and dates for the candidate's caste"
+     ],
+     "application_procedure": "Fill form details, delete non-applicable words, sign before competent authority with seal",
+     "important_instructions": [
+      "Visit http://www.ncbc.nic.in for latest guidelines",
+      "Delete word(s) not applicable to gender or family status",
+      "Certificate issued by any other authority will be rejected"
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "document_type": [
+      1
+     ],
+     "issuing_department": [
+      1
+     ],
+     "reference_number": [
+      1
+     ],
+     "eligibility_criteria": [
+      1
+     ],
+     "required_documents": [
+      1
+     ],
+     "application_procedure": [
+      1
+     ],
+     "important_instructions": [
+      1
+     ]
+    },
+    "additional_fields": [],
+    "summary_coverage": {
+     "sections": 1,
+     "characters_used": 3888,
+     "characters_total": 3888
+    },
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [],
+    "summary_retried": true,
+    "category": "form"
+   },
+   "total_seconds": 566.2
+  },
+  {
+   "document": "law-ministry-hindi-proof-reader-circular-2025.pdf",
+   "pages": 7,
+   "scanned_pages": [],
+   "characters": 7035,
+   "detected_language": "Hindi",
+   "stages": {
+    "text extraction": 0.361,
+    "ocr": 0.0,
+    "language detection": 0.0063,
+    "analysis (fields + summary)": 198.15,
+    "categorisation": 0.0098,
+    "retrieval (one question)": 0.0098
+   },
+   "ocr_calls": [],
+   "analysis_calls": [
+    {
+     "mode": "fields",
+     "seconds": 54.37,
+     "images": 0,
+     "prompt_eval_count": 1105,
+     "eval_count": 312,
+     "prompt_eval_seconds": 19.02,
+     "eval_seconds": 34.99,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "section",
+     "seconds": 30.24,
+     "images": 0,
+     "prompt_eval_count": 791,
+     "eval_count": 131,
+     "prompt_eval_seconds": 14.46,
+     "eval_seconds": 15.61,
+     "load_seconds": 0.02
+    },
+    {
+     "mode": "section",
+     "seconds": 23.35,
+     "images": 0,
+     "prompt_eval_count": 613,
+     "eval_count": 112,
+     "prompt_eval_seconds": 11.01,
+     "eval_seconds": 12.11,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "section",
+     "seconds": 33.85,
+     "images": 0,
+     "prompt_eval_count": 973,
+     "eval_count": 117,
+     "prompt_eval_seconds": 17.75,
+     "eval_seconds": 15.16,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "section",
+     "seconds": 18.42,
+     "images": 0,
+     "prompt_eval_count": 473,
+     "eval_count": 87,
+     "prompt_eval_seconds": 8.1,
+     "eval_seconds": 9.13,
+     "load_seconds": 0.76
+    },
+    {
+     "mode": "reduce",
+     "seconds": 37.63,
+     "images": 0,
+     "prompt_eval_count": 684,
+     "eval_count": 220,
+     "prompt_eval_seconds": 11.47,
+     "eval_seconds": 25.89,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 33.39,
+     "cached_seconds": 0.002,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ಈ ದಾಖಲೆಯು ಸೇವಾ ವರ್ಷಗಳು ಮತ್ತು ಕೇಡರ್ ಹುದ್ದೆಗಳ ಆಧಾರದ ಮೇಲೆ ಅರ್ಹತೆ ಸೇರಿದಂತೆ ಸಾಮಾನ್ಯ ಕೇಂದ್ರೀಯ ಸೇವೆಗಳ ಅಡಿಯಲ್ಲಿ ಬಡ್ತಿ ಪಡೆಯುವ ಮೂಲಕ ಪ್ರೂಫ್ ರೀಡರ್ ಅನ್ನು ನೇಮಿಸುವ ಮಾನದಂಡಗಳನ್ನು ರೂಪಿಸುತ್ತದೆ. ಇದು ಹಿಂದಿ ಪ್ರಾವೀಣ್ಯತೆಯ ಅವಶ್ಯಕತೆಗಳು, ಎಸ್ಸಿ/ಎಸ್ಟಿ ಅಥವಾ ಅಂಗವಿಕಲ ವ್ಯಕ್ತಿಗಳಿಗೆ ವಿನಾಯಿತಿಗಳು, ಜೀವ ಪ್ರಮಾಣಪತ್ರ ಅರ್ಜಿಯ ಸ್ವರೂಪ ಮತ್ತು ಸಿವಿ ನಿಖರತೆ ಮತ್ತು ಆಯ್ಕೆಯ ನಂತರ ತಕ್ಷಣದ ಪರಿಹಾರಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಕಡ್ಡಾಯ ಘೋಷಣೆಗಳನ್ನು ವಿವರಿಸುತ್ತದೆ.",
+      "main_points": [
+       "ಅರ್ಹತೆಗೆ ನಿಯಮಿತ ಕೇಡರ್ ಹುದ್ದೆಗಳು ಅಥವಾ 8 + ವರ್ಷಗಳು 19,900-63,200 ರೂ. ಗಳ ಮಟ್ಟದಲ್ಲಿರಬೇಕು (ಪುಟ 1).",
+       "ಹಿಂದಿ ಪ್ರಾವೀಣ್ಯತೆಗೆ ಹನ್ನೆರಡನೇ ತರಗತಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸುವುದು ಅಥವಾ 2 ವರ್ಷಗಳ ಪತ್ರಿಕಾ ಅನುಭವದ ಅಗತ್ಯವಿದೆ; ಹತ್ತನೇ ತರಗತಿಯ ಹಿಂದಿ ಅಧ್ಯಯನವು ಕಡ್ಡಾಯವಾಗಿದೆ (ಪುಟಗಳು 3-4).",
+       "ಮೀಸಲಾದ ಸ್ಥಾನಗಳಿಗೆ ಸಾಕಷ್ಟು ಅರ್ಜಿದಾರರು ಲಭ್ಯವಿಲ್ಲದಿದ್ದರೆ ಎಸ್ಸಿ/ಎಸ್ಟಿ ಮತ್ತು ಅಂಗವಿಕಲ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ವಿನಾಯಿತಿ ಸಿಗಬಹುದು.",
+       "ಜೀವ ಪ್ರಮಾಣಪತ್ರ ಫಾರ್ಮ್ಗೆ ಹೆಸರು, ವಿಳಾಸ, ಡಿಒಬಿ, ನಿವೃತ್ತಿ ದಿನಾಂಕಗಳು, ಅರ್ಹತೆಗಳು, ಸಂಬಳದ ವಿವರಗಳು ಮತ್ತು ಸೂಕ್ತತೆಯ ದೃಢೀಕರಣದ ಅಗತ್ಯವಿದೆ (ಪುಟಗಳು 4-6).",
+       "ಅಭ್ಯರ್ಥಿಯು ಸಿವಿ ನಿಖರತೆಯನ್ನು ದೃಢೀಕರಿಸುವ ಹಿಂದಿ ಘೋಷಣೆಗೆ ಸಹಿ ಹಾಕಬೇಕು; ಆಯ್ಕೆಯು ಕರ್ತವ್ಯದ ತಕ್ಷಣದ ಪರಿಹಾರವನ್ನು ಪ್ರಚೋದಿಸುತ್ತದೆ (ಪುಟ 7)."
+      ],
+      "fields": {
+       "document_title": "ಕಾನೂನು ಇಲಾಖೆಯ ರಾಜಭಾಷೆ ವಿಭಾಗದಲ್ಲಿ ಪ್ರಚಾರದ ಮೂಲಕ ಪ್ರೂಫ್ ರೀಡರ್ ನೇಮಕ",
+       "document_type": "ಆಡಳಿತಾತ್ಮಕ ಸುತ್ತೋಲೆ",
+       "issuing_department": "ಕಾನೂನು ಮತ್ತು ನ್ಯಾಯ ಸಚಿವಾಲಯ, ಶಾಸಕಾಂಗ ಶಾಖೆ, ಹಿಂದಿ ಭಾಷಾ ವಿಭಾಗ",
+       "reference_number": "S.No. E-12026/1/2025-Admin",
+       "eligibility_criteria": [
+        "ಪ್ರಸ್ತುತ ಮೂಲ ಕೇಡರ್ ಅಥವಾ ಇಲಾಖೆಯಲ್ಲಿ ನಿಯಮಿತ ಹುದ್ದೆಯನ್ನು ಹೊಂದಿದ್ದಾರೆ (ಷರತ್ತು I)",
+        "ಅದೇ ದರ್ಜೆಗೆ ಸೇರಿದ ನಂತರ ಕನಿಷ್ಠ ಎಂಟು ವರ್ಷಗಳ ಸೇವೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ ನಂತರ ಸಂಬಳದ ಮ್ಯಾಟ್ರಿಕ್ಸ್ ರೂ. ಅನುಬಂಧ-1 ಅಂಕಣ ಸಂಖ್ಯೆ ಅಡಿಯಲ್ಲಿ 19,900-63,200. 7 (ಷರತ್ತು II)"
+       ],
+       "required_documents": [
+        "ನೇರ ನೇಮಕಾತಿಗೆ ಅರ್ಹ ಹುದ್ದೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಅನುಬಂಧ-1",
+        "ಪ್ರಸ್ತುತ ನಿಯಮಿತ ಪೋಸ್ಟ್ ಅಥವಾ ಹಿಂದಿನ ಪ್ರಚಾರದ ಇತಿಹಾಸದ ಪುರಾವೆ"
+       ],
+       "application_procedure": "ಹಾಲಿ ಕೇಡರ್ನಿಂದ ಬಡ್ತಿ ಪಡೆಯುವ ಮೂಲಕ ನೇಮಕ; ಹೊಸ ನೇಮಕಾತಿಗಳಿಗೆ ಅವಕಾಶವಿಲ್ಲ.",
+       "exceptions_or_special_conditions": [
+        "ತಕ್ಷಣದ ಶ್ರೇಣಿಯಲ್ಲಿರುವ ಇಲಾಖಾ ಅಧಿಕಾರಿಗಳು ಅನರ್ಹರಾಗಿರುತ್ತಾರೆ (ಟಿಪ್ಪಣಿ 1)",
+        "ಬಡ್ತಿ ಮೂಲಕ ನೇಮಕಗೊಂಡ ಅಧಿಕಾರಿಗಳನ್ನು ಭವಿಷ್ಯದ ಬಡ್ತಿಗಳಿಗೆ ಪರಿಗಣಿಸಲಾಗುವುದಿಲ್ಲ."
+       ]
+      },
+      "additional_fields": [],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "law-01",
+     "question": "Which department issued this circular?",
+     "seconds": 34.79,
+     "error": "",
+     "answer": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय) issued this circular through its Legislative Department's Hindi Section.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 33.5,
+       "images": 0,
+       "prompt_eval_count": 1568,
+       "eval_count": 50,
+       "prompt_eval_seconds": 28.0,
+       "eval_seconds": 5.23,
+       "load_seconds": 0.02
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "विधायी विभाग",
+       "Legislative Department"
+      ]
+     }
+    },
+    {
+     "id": "law-02",
+     "question": "Which post is to be filled on deputation?",
+     "seconds": 33.84,
+     "error": "",
+     "answer": "The **Proof Reader** post (प्रूफ रीडर का पद) in the Raj Bhasha Khanda of the Legislative Department, Ministry of Law and Justice, is expected to be filled based on deputation.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 32.24,
+       "images": 0,
+       "prompt_eval_count": 1979,
+       "eval_count": 62,
+       "prompt_eval_seconds": 25.66,
+       "eval_seconds": 6.47,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "प्रूफ रीडर",
+       "Proof Reader"
+      ]
+     }
+    },
+    {
+     "id": "law-03",
+     "question": "What is the pay matrix range for the post?",
+     "seconds": 36.6,
+     "error": "",
+     "answer": "The pay matrix range for the Post Reader position is **₹25,500 - ₹81,100**.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 34.97,
+       "images": 0,
+       "prompt_eval_count": 2230,
+       "eval_count": 45,
+       "prompt_eval_seconds": 30.31,
+       "eval_seconds": 4.46,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "₹25500-81100",
+       "25500-81100"
+      ]
+     }
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 41.34,
+     "error": "",
+     "answer": "ಈ ದಾಖಲೆಯಲ್ಲಿ ಎಂದಿಗೂ 'ದಾಖಲೆ ಯಾರು ಹೊರಡಿಸಿದರು' ಎಂದು ಸ್ಪಷ್ಟವಾಗಿ ಉಲ್ಲೇಖಿತವಾಗಿದೆ. ಆದರೆ, ಈ ಪತ್ರವನ್ನು **ಭಾಗ್ಯಾಧಿಕಾರಿಯ ಅಥವಾ ಸಕ್ರಮ ಪ್ರಾಧಿಕಾರಿ** (Departmental Head/Competent Authority) ಹಸ್ತಕ್ಷರಿಸಿದ್ದಾರೆ ಮತ್ತು ಇದು ಅವರು ಒಪ್ಪಿಗೆ ನೀಡಿದಂತೆ ಕಂಡುಬಂದಿದೆ. ದಾಖಲೆಯಲ್ಲಿ 'ಅಭ್ಯರ್ಥಿಯ ಚಿಹ್ನೆ' (Candidate's Signature) ಅನ್ನು ಸೇರಿ, ಆದರೆ ಯಾರ ಹಸ್ತಕ್ಷರವಾಗಿರುವುದು ಎಂಬುದನ್ನು ನಿಗದಿತವಾಗಿಸುವ ಮಾಹಿತಿ ಇಲ್ಲ.",
+     "answer_language": "Kannada",
+     "answer_pages": [],
+     "found": false,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question_translation",
+       "seconds": 3.2,
+       "images": 0,
+       "prompt_eval_count": 86,
+       "eval_count": 10,
+       "prompt_eval_seconds": 1.76,
+       "eval_seconds": 1.2,
+       "load_seconds": 0.01
+      },
+      {
+       "mode": "question",
+       "seconds": 36.81,
+       "images": 0,
+       "prompt_eval_count": 656,
+       "eval_count": 195,
+       "prompt_eval_seconds": 15.42,
+       "eval_seconds": 21.31,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "law-01",
+     "field": "issuing_department",
+     "expected": {
+      "any_of": [
+       "विधायी विभाग",
+       "Legislative Department",
+       "विधि और न्याय मंत्रालय",
+       "Ministry of Law and Justice"
+      ]
+     },
+     "predicted": "Ministry of Law and Justice, Legislative Branch, Hindi Language Division",
+     "correct": true
+    },
+    {
+     "case": "law-02",
+     "field": "date",
+     "expected": {
+      "any_of": [
+       "24 अक्टूबर, 2025",
+       "24 October 2025"
+      ]
+     },
+     "predicted": null,
+     "correct": false
+    },
+    {
+     "case": "law-03",
+     "field": "reference_number",
+     "expected": {
+      "any_of": [
+       "ए-12026/1/2025",
+       "A-12026/1/2025",
+       "12026/1/2025"
+      ]
+     },
+     "predicted": "S.No. E-12026/1/2025-Admin",
+     "correct": true
+    }
+   ],
+   "analysis": {
+    "document_type": "Administrative Circular",
+    "language": "Hindi/English (Mixed)",
+    "fields": {
+     "document_title": "Appointment of Proof Reader by Promotion in Raj Bhasha Section, Legal Department",
+     "document_type": "Administrative Circular",
+     "issuing_department": "Ministry of Law and Justice, Legislative Branch, Hindi Language Division",
+     "reference_number": "S.No. E-12026/1/2025-Admin",
+     "eligibility_criteria": [
+      "Currently holding a regular post in the original cadre or department (Clause i)",
+      "Completed at least eight years of service after joining the same grade with a salary matrix Rs. 19,900–63,200 under Annexure-1 Column No. 7 (Clause ii)"
+     ],
+     "required_documents": [
+      "Annexure-1 regarding eligible posts for direct recruitment",
+      "Proof of current regular post or previous promotion history"
+     ],
+     "application_procedure": "Appointment by promotion from existing cadre; not open to fresh recruits.",
+     "exceptions_or_special_conditions": [
+      "Departmental officers in the immediate rank are ineligible (Note 1)",
+      "Officers appointed via promotion cannot be considered for future promotions"
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "issuing_department": [
+      1
+     ],
+     "reference_number": [
+      1
+     ],
+     "eligibility_criteria": [
+      1
+     ],
+     "required_documents": [
+      1
+     ],
+     "application_procedure": [
+      1
+     ],
+     "exceptions_or_special_conditions": [
+      1
+     ]
+    },
+    "additional_fields": [],
+    "field_evidence_pages": [
+     1
+    ],
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "unverified_dates": [
+     "date"
+    ],
+    "main_points": [
+     "Eligibility requires regular cadre posts or 8+ years at Rs 19,900–63,200 level (Page 1).",
+     "Hindi proficiency needs Class XII completion or 2 years press experience; prior Class X Hindi study mandatory (Pages 3-4).",
+     "SC/ST and disabled candidates may get exceptions if sufficient applicants unavailable for reserved seats.",
+     "Life Certificate form requires name, address, DOB, retirement dates, qualifications, salary details, and suitability confirmation (Pages 4-6).",
+     "Candidate must sign a Hindi declaration confirming CV accuracy; selection triggers immediate relief of duty (Page 7)."
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [],
+    "summary": "This document outlines criteria for appointing a Proof Reader via promotion under General Central Services, including eligibility based on service years and cadre posts. It details requirements for Hindi proficiency, exceptions for SC/ST or persons with disabilities, the Life Certificate application format, and mandatory declarations regarding CV accuracy and immediate relief upon selection.",
+    "summary_coverage": {
+     "sections": 4,
+     "characters_used": 4634,
+     "section_pages": [
+      [
+       1,
+       2
+      ],
+      [
+       3,
+       3
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       7,
+       7
+      ]
+     ],
+     "characters_total": 7035
+    },
+    "category": "recruitment"
+   },
+   "total_seconds": 378.5
+  },
+  {
+   "document": "ap-thalliki-vandanam-scheme-go-2025.pdf",
+   "pages": 7,
+   "scanned_pages": [],
+   "characters": 13218,
+   "detected_language": "English",
+   "stages": {
+    "text extraction": 0.3,
+    "ocr": 0.0,
+    "language detection": 0.0045,
+    "analysis (fields + summary)": 293.2,
+    "categorisation": 0.0051,
+    "retrieval (one question)": 0.0103
+   },
+   "ocr_calls": [],
+   "analysis_calls": [
+    {
+     "mode": "fields",
+     "seconds": 129.84,
+     "images": 0,
+     "prompt_eval_count": 2778,
+     "eval_count": 636,
+     "prompt_eval_seconds": 50.5,
+     "eval_seconds": 78.41,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "section",
+     "seconds": 46.87,
+     "images": 0,
+     "prompt_eval_count": 1305,
+     "eval_count": 197,
+     "prompt_eval_seconds": 25.03,
+     "eval_seconds": 21.28,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "section",
+     "seconds": 38.88,
+     "images": 0,
+     "prompt_eval_count": 1088,
+     "eval_count": 163,
+     "prompt_eval_seconds": 20.48,
+     "eval_seconds": 18.14,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "section",
+     "seconds": 39.35,
+     "images": 0,
+     "prompt_eval_count": 1115,
+     "eval_count": 190,
+     "prompt_eval_seconds": 20.11,
+     "eval_seconds": 19.04,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "reduce",
+     "seconds": 38.08,
+     "images": 0,
+     "prompt_eval_count": 784,
+     "eval_count": 240,
+     "prompt_eval_seconds": 13.98,
+     "eval_seconds": 23.91,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 65.6,
+     "cached_seconds": 0.002,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ಆಂಧ್ರಪ್ರದೇಶ ಸರ್ಕಾರವು G.O.MS.No ಅನ್ನು ಬಿಡುಗಡೆ ಮಾಡಿತು. 2025ರ ಜೂನ್ 12ರಂದು, ಮಾನ್ಯತೆ ಪಡೆದ ಶಾಲೆಗಳಿಂದ ಒಂದರಿಂದ ಹನ್ನೆರಡನೇ ತರಗತಿಯವರೆಗಿನ ಅರ್ಹ ಮಕ್ಕಳಿಗೆ ಡಿಬಿಟಿ ಮೂಲಕ ವರ್ಷಕ್ಕೆ ರೂ. 15,000 ಒದಗಿಸುವ'ತಲ್ಲಿಕ್ಕಿ ವಂದನಂ'ಯೋಜನೆಯನ್ನು ಅನುಷ್ಠಾನಗೊಳಿಸುವುದು. [26]",
+      "main_points": [
+       "ನಿರ್ದಿಷ್ಟ ಭೂಮಿ/ವಿದ್ಯುತ್ ಮಿತಿಗಳನ್ನು (ಪುಟ 3) ಹೊಂದಿರುವ ಗ್ರಾಮೀಣ (<Rs.10k/mo) ಅಥವಾ ನಗರ (<Rs.12k/mo) ಕುಟುಂಬಗಳಿಗೆ Rs.15k/annum ಸಹಾಯವನ್ನು ಒದಗಿಸುತ್ತದೆ.",
+       "ಐಟಿಐ/ಪಾಲಿ ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಹೊರತುಪಡಿಸಿ; 75 ಪ್ರತಿಶತ ಹಾಜರಾತಿಯ ಅಗತ್ಯವಿರುತ್ತದೆ ಮತ್ತು 1,000 ಚದರ ಅಡಿ (p.4-5) ಗಿಂತ ಹೆಚ್ಚಿನ ಪುರಸಭೆಯ ಆಸ್ತಿ ಮಾಲೀಕತ್ವವನ್ನು ನಿಷೇಧಿಸುತ್ತದೆ.",
+       "ಡಿಬಿಟಿ ಕೋಡ್ಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಜಿಎಸ್ಡಬ್ಲ್ಯೂಎಸ್/ಫೈನಾನ್ಸ್ ಮೂಲಕ ತಾಯಂದಿರ ಖಾತೆಗಳಿಗೆ ಅಥವಾ ಒಂಟಿ ಪೋಷಕರ ಪೋಷಕರಿಗೆ (p.4-5) ವಿತರಣೆ.",
+       "ಕೇಂದ್ರ ಪ್ರಾಯೋಜಿತ ಯೋಜನೆಗಳ ವಿದ್ಯಾರ್ಥಿವೇತನಗಳು ಈ ಯೋಜನೆಗೆ ಪೂರಕವಾಗಿವೆ; ಸಾಮಾಜಿಕ ಲೆಕ್ಕಪರಿಶೋಧನೆಗಳು ಮತ್ತು ಕುಂದುಕೊರತೆಗಳ ಕಾರ್ಯವಿಧಾನಗಳು U.O.No ನಿಂದ ಕಡ್ಡಾಯವಾಗಿವೆ. ಎಫ್. ಐ. ಎನ್.01-ಎಫ್. ಎಂ. ಯು. 0. ಪಿ. ಸಿ. (ಎಸ್. ಇ.)/1/2025 (p.6-7)."
+      ],
+      "fields": {
+       "document_title": "ತಲ್ಲಿಕ್ಕಿ ವಂಡನಂ-ಪ್ರತಿ ಅರ್ಹ ತಾಯಿ/ಪೋಷಕರಿಗೆ ತಮ್ಮ ಮಕ್ಕಳನ್ನು ಶಾಲೆಗಳಿಗೆ/ಕಿರಿಯರಿಗೆ ಕಳುಹಿಸಲು ಪ್ರತಿ ಮಗುವಿಗೆ ವರ್ಷಕ್ಕೆ ರೂ. 15,000/- ಆರ್ಥಿಕ ನೆರವು. ಒಂದರಿಂದ ಹನ್ನೆರಡನೇ ತರಗತಿಯವರೆಗಿನ ಕಾಲೇಜುಗಳು-ಶೈಕ್ಷಣಿಕ ವರ್ಷದಿಂದ ಯೋಜನೆಯ ಅನುಷ್ಠಾನ 2025-6-ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಹೊರಡಿಸಲಾಗಿದೆ.",
+       "document_type": "ಸರ್ಕಾರಿ ಆದೇಶ (G.O.MS.No. 26)",
+       "issuing_department": "ಶಾಲಾ ಶಿಕ್ಷಣ ಇಲಾಖೆ, ಆಂಧ್ರಪ್ರದೇಶ ಸರ್ಕಾರ",
+       "date": "12-06-2025",
+       "reference_number": "G.O.MS.No. 26; G.O.Rt.No. 326",
+       "amount": "Rs.15,000/- per annum per child (deduction: Rs.2,000/ student)",
+       "deadline": "ಒಂದನೇ ಮತ್ತು ಹನ್ನೊಂದನೇ ತರಗತಿಯ ದಾಖಲಾತಿ ಪೂರ್ಣಗೊಂಡ ನಂತರ ಶೈಕ್ಷಣಿಕ ವರ್ಷ 2025-26 ಅನುಷ್ಠಾನ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+       "important_dates": [
+        "ಶೈಕ್ಷಣಿಕ ವರ್ಷ 2025-26",
+        "ಎ. ವೈ. ಅಂತ್ಯದೊಳಗೆ ನೋಂದಣಿ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸುವುದು ಅಗತ್ಯವಾಗಿದೆ. 2025-26"
+       ],
+       "eligibility_criteria": [
+        "ಮಾನ್ಯತೆ ಪಡೆದ ಶಾಲೆಗಳು/ಜೂನಿಯರ್ ಕಾಲೇಜುಗಳಲ್ಲಿ ಒಂದರಿಂದ ಹನ್ನೆರಡನೇ ತರಗತಿಯ (ಮಧ್ಯಂತರ ಸೇರಿದಂತೆ) ಮಕ್ಕಳೊಂದಿಗೆ ತಾಯಿ/ಪೋಷಕರು",
+        "ಪುರಸಭೆಯ ಆಸ್ತಿಯನ್ನು ಹೊಂದಿರದ ಕುಟುಂಬ> = 1000 sq.Ft",
+        "ಕೇಂದ್ರ/ರಾಜ್ಯ ಸರ್ಕಾರಿ ಸೇವೆ, ಪಿಎಸ್ಯುಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡುವ ಅಥವಾ ಪಿಂಚಣಿ ಪಡೆಯುವ ಯಾವುದೇ ಮನೆಯ ಸದಸ್ಯರಿಲ್ಲ (ನೈರ್ಮಲ್ಯ ಕಾರ್ಮಿಕರಿಗೆ ವಿನಾಯಿತಿ)]",
+        "ಆದಾಯ ತೆರಿಗೆ ಪಾವತಿದಾರರ ಕುಟುಂಬಗಳು ಅನರ್ಹವಾಗಿವೆ.",
+        "ಆಂಧ್ರ ಪ್ರದೇಶದ ಮನೆಯ ದತ್ತಸಂಚಯದಲ್ಲಿ ಫಲಾನುಭವಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ.",
+        "ಮುಂದಿನ ವರ್ಷಕ್ಕೆ ಅರ್ಹತೆಯನ್ನು ಮುಂದುವರಿಸಲು ವಿದ್ಯಾರ್ಥಿಗಳ ಹಾಜರಾತಿಯು ಶೇಕಡಾ 75ರಷ್ಟಿರಬೇಕು.",
+        "1ರಿಂದ 12ನೇ ತರಗತಿಯಲ್ಲಿ ಮಾತ್ರ ಓದುತ್ತಿರುವ ಫಲಾನುಭವಿಗಳ ಮಕ್ಕಳು; ಐ. ಟಿ. ಐ./ಪಾಲಿಟೆಕ್ನಿಕ್/ಐ. ಐ. ಐ. ಟಿ. ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಹೊರಗಿಡಲಾಗಿದೆ.",
+        "ಅಗತ್ಯವಿರುವ ದಾಖಲೆಗಳು (_ D)",
+        "ಶಾಲಾ ಶಿಕ್ಷಣ ನಿರ್ದೇಶಕರು ಸಲ್ಲಿಸಿದ ಪ್ರಸ್ತಾಪ (ಉಲ್ಲೇಖ: G.O.Rt.No.326)",
+        "ಯು. ಡಿ. ಐ. ಎಸ್. ಇ./ಇಲಾಖೆಯ ಅಧಿಕೃತ ಪೋರ್ಟಲ್ ದತ್ತಾಂಶ ನಮೂದು ಪರಿಶೀಲನೆ",
+        "ಅಪ್ಲಿಕೇಶನ್ ವಿಧಾನ (_ p)",
+        "ಶಾಲಾ ಶಿಕ್ಷಣ ಇಲಾಖೆ ಮತ್ತು ಮಧ್ಯಂತರ ಶಿಕ್ಷಣ ಮಂಡಳಿಯಿಂದ ಸಮನ್ವಯಗೊಂಡ ದತ್ತಾಂಶ ಸಂಗ್ರಹ; ಗ್ರಾಮ/ವಾರ್ಡ್ ಸಚಿವಾಲಯದಲ್ಲಿ ಸಾಮಾಜಿಕ ಲೆಕ್ಕಪರಿಶೋಧನೆಗಾಗಿ ಪ್ರದರ್ಶಿಸಲಾದ ಫಲಾನುಭವಿಗಳ ಪಟ್ಟಿ.",
+        "ಪ್ರಮುಖ ಸೂಚನೆಗಳು (_ i)",
+        "ಶೈಕ್ಷಣಿಕ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಫಲಾನುಭವಿಯ ಖಾತೆಯಿಂದ ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಗೆ 2,000 ರೂ.",
+        "ಡಿಬಿಟಿ ವಿತರಣೆಯ ಮೊದಲು ಎನ್. ಪಿ. ಸಿ. ಐ. ಸ್ಥಿತಿಯನ್ನು (ಆಧಾರ ಸೀಡಿಂಗ್) ಪರಿಶೀಲಿಸಿ.",
+        "ವಂಚನೆಯ ಬಳಕೆಯು ಕ್ರಿಮಿನಲ್ ಕಾರ್ಯವಿಧಾನಕ್ಕೆ ಮತ್ತು ಮೊತ್ತದ ವಸೂಲಿಗೆ ಕಾರಣವಾಗುತ್ತದೆ.",
+        "ವಿನಾಯಿತಿಗಳು _ ಅಥವಾ _ ವಿಶೇಷ _ ಷರತ್ತುಗಳು",
+        "ಸ್ವಯಂಪ್ರೇರಿತ ಸಂಸ್ಥೆಗಳ ಮೂಲಕ ಅನಾಥರು/ಬೀದಿ ಮಕ್ಕಳು ದೃಢೀಕರಣಕ್ಕೆ ಒಳಪಟ್ಟು ಅರ್ಹರಾಗಿರುತ್ತಾರೆ.",
+        "ಸಿಎಸ್ಎಸ್ ಯೋಜನೆಗಳ ಅಡಿಯಲ್ಲಿ ಎಸ್ಸಿ/ಎಸ್ಟಿ/ಬಿಸಿ/ಅಲ್ಪಸಂಖ್ಯಾತ ವಿದ್ಯಾರ್ಥಿಗಳು: ಸಿಎಸ್ಎಸ್ ಪ್ರಯೋಜನವನ್ನು ಮೊದಲು ಪೂರೈಸಲಾಗುತ್ತದೆ, ಉಳಿದ ಮೊತ್ತವನ್ನು ತಲ್ಲಿಕ್ಕಿ ವಂದನಂ ಬಜೆಟ್ನಿಂದ ಪಾವತಿಸಲಾಗುತ್ತದೆ.",
+        "ತಿಂಗಳಿಗೆ ರೂ. 10 ಸಾವಿರಕ್ಕಿಂತ ಕಡಿಮೆ (ಗ್ರಾಮೀಣ) ಅಥವಾ ತಿಂಗಳಿಗೆ ರೂ. 12 ಸಾವಿರಕ್ಕಿಂತ ಕಡಿಮೆ (ನಗರ) ಗಳಿಸುವ ಉದ್ಯೋಗಿಗಳಿಗೆ ಸರ್ಕಾರಿ ಸೇವೆಯಲ್ಲಿದ್ದರೆ ವಿನಾಯಿತಿ ನೀಡಲಾಗಿದೆ.",
+        "ಕ್ಷೇತ್ರ ಮೂಲಗಳು: {ಡಾಕ್ಯುಮೆಂಟ್ ಶೀರ್ಷಿಕೆ: [\"ಪುಟ 1\", \"ಪುಟ 2\"], ವಿತರಣಾ ವಿಭಾಗ: [\"ಪುಟ 7\"], \"ದಿನಾಂಕ\": [\"ಪುಟ 1\", \"ಪುಟ 8\"], ಉಲ್ಲೇಖ ಸಂಖ್ಯೆ: [\"ಪುಟ 1\", \"ಪುಟ 8\"]"
+       ]
+      },
+      "additional_fields": [],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "apscheme-01",
+     "question": "How much financial assistance is given per child per annum under the scheme?",
+     "seconds": 35.0,
+     "error": "",
+     "answer": "The \"THALLIKI VANDANAM\" scheme provides **Rs.15,000/-** per annum per child to every eligible mother/guardian for sending their children from Class I to XII (including Intermediate) in recognized schools/Jr. Colleges.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 34.98,
+       "images": 0,
+       "prompt_eval_count": 1470,
+       "eval_count": 72,
+       "prompt_eval_seconds": 26.06,
+       "eval_seconds": 7.26,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "Rs.15,000",
+       "15,000"
+      ]
+     }
+    },
+    {
+     "id": "apscheme-02",
+     "question": "How much is deducted at source per student?",
+     "seconds": 69.85,
+     "error": "",
+     "answer": "An amount of **Rs.2,000/-** per each student shall be deducted at source from the beneficiary.",
+     "answer_language": "English",
+     "answer_pages": [
+      2
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 20.43,
+       "images": 0,
+       "prompt_eval_count": 1475,
+       "eval_count": 25,
+       "prompt_eval_seconds": 18.05,
+       "eval_seconds": 2.31,
+       "load_seconds": 0.01
+      },
+      {
+       "mode": "question",
+       "seconds": 49.41,
+       "images": 0,
+       "prompt_eval_count": 1590,
+       "eval_count": 62,
+       "prompt_eval_seconds": 40.18,
+       "eval_seconds": 7.51,
+       "load_seconds": 0.02
+      }
+     ],
+     "answer_correct": true,
+     "expected": {
+      "any_of": [
+       "Rs.2,000",
+       "2,000"
+      ]
+     }
+    },
+    {
+     "id": "apscheme-03",
+     "question": "Which classes are covered by the scheme?",
+     "seconds": 35.23,
+     "error": "",
+     "answer": "The \"THALLIKI VANDANAM\" scheme covers students from **Class I to Class XII**, including **Intermediate Education**.\n\n- The assistance is provided for sending children to schools or Jr. Colleges across these classes.\n- This includes all recognized Government, Private Aided, and Private Unaided schools/Jr.Colleges as well as Residential Schools/Jr.Colleges in the State.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 35.22,
+       "images": 0,
+       "prompt_eval_count": 1419,
+       "eval_count": 102,
+       "prompt_eval_seconds": 25.15,
+       "eval_seconds": 9.85,
+       "load_seconds": 0.03
+      }
+     ],
+     "answer_correct": false,
+     "expected": {
+      "any_of": [
+       "Classes I to XII",
+       "Class I to XII",
+       "I to XII"
+      ]
+     }
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 33.16,
+     "error": "",
+     "answer": "ಈ ಕ್ರಮವನ್ನು (Order) **ಕೋಣ ಸಸಿಧರ್** ಅವರು, ಆಂధ್ರಪ್ರದೇಶ ರಾಜ್ಯ ಸಚಿವರಾಗಿ ಹೊರಡಿಸಿದ್ದಾರೆ. ಇದು ಗೌರವನಾರ್ಥ ಮತ್ತು ಅಂದರೆ ಆಂಧ್ರಪ್ರದೇಶದ ಪ್ರಭುತ್ವದ (Governor of Andhra Pradesh) ಕೆಲಸ ಎಂದು ಘೋಷಣೆಯಾಗಿದೆ.",
+     "answer_language": "Kannada",
+     "answer_pages": [
+      7
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question_translation",
+       "seconds": 2.44,
+       "images": 0,
+       "prompt_eval_count": 86,
+       "eval_count": 10,
+       "prompt_eval_seconds": 0.54,
+       "eval_seconds": 0.94,
+       "load_seconds": 0.01
+      },
+      {
+       "mode": "question",
+       "seconds": 30.7,
+       "images": 0,
+       "prompt_eval_count": 1519,
+       "eval_count": 120,
+       "prompt_eval_seconds": 18.7,
+       "eval_seconds": 11.79,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "apscheme-01",
+     "field": "reference_number",
+     "expected": {
+      "any_of": [
+       "G.O.MS.No. 26",
+       "G.O.Ms.No.26"
+      ]
+     },
+     "predicted": "G.O.MS.No. 26; G.O.Rt.No. 326",
+     "correct": false
+    },
+    {
+     "case": "apscheme-02",
+     "field": "date",
+     "expected": "12-06-2025",
+     "predicted": "12-06-2025",
+     "correct": true
+    },
+    {
+     "case": "apscheme-03",
+     "field": "issuing_department",
+     "expected": {
+      "any_of": [
+       "School Education (SER.I) Department",
+       "School Education Department",
+       "Government of Andhra Pradesh"
+      ]
+     },
+     "predicted": "School Education Department, Government of Andhra Pradesh",
+     "correct": true
+    }
+   ],
+   "analysis": {
+    "document_type": "Government Order (G.O.MS.No. 26)",
+    "language": "English",
+    "fields": {
+     "document_title": "THALLIKI VANDANAM - Financial assistance of Rs.15,000/- per annum per child to every eligible mother/guardian for sending their children to schools/Jr. Colleges from Classes I to XII - Implementation of the scheme from the academic year 2025-6 – Guidelines Issued",
+     "document_type": "Government Order (G.O.MS.No. 26)",
+     "issuing_department": "School Education Department, Government of Andhra Pradesh",
+     "date": "12-06-2025",
+     "reference_number": "G.O.MS.No. 26; G.O.Rt.No. 326",
+     "amount": "Rs.15,000/- per annum per child (deduction: Rs.2,000/ student)",
+     "deadline": "Academic year 2025-26 implementation starts after enrollment completion for Class I and XI",
+     "important_dates": [
+      "Academic Year 2025-26",
+      "Enrollment process completion required by end of A.Y. 2025-26"
+     ],
+     "eligibility_criteria": [
+      "Mother/guardian with children in Classes I to XII (including Intermediate) in recognized schools/Jr.Colleges",
+      "Household not owning Municipal property >=1000 sq.Ft",
+      "No household member employed in Central/State Govt service, PSU or getting pension (Sanitation workers exempted)]",
+      "Income tax payer households are ineligible",
+      "Beneficiary included in Andhra Pradesh household database",
+      "Student attendance must be 75% to continue eligibility for subsequent year",
+      "Children of beneficiaries studying in Classes I-XII only; ITI/Polytechnic/IIIT students excluded",
+      "required_documents",
+      "Proposal submitted by Director of School Education (Ref: G.O.Rt.No.326)",
+      "UDISE/Department Official Portal data entry verification",
+      "application_procedure",
+      "Data collection coordinated by School Education Dept and Board of Intermediate Education; beneficiary list displayed for social audit at village/ward secretariat.",
+      "important_instructions",
+      "Deduct Rs.2,000 per student from beneficiary account for Educational Ecosystem development",
+      "Verify NPCI status (Aadhaar seeding) before DBT disbursement",
+      "Fraudulent use leads to criminal procedure and recovery of amount",
+      "exceptions_or_special_conditions",
+      "Orphans/street children via voluntary organizations eligible subject to confirmation",
+      "SC/ST/BC/Minority students under CSS schemes: CSS benefit met first, balance paid from Thalliki Vandanam budget",
+      "Employees earning <Rs.10k/month (Rural) or <Rs.12k/month (Urban) exempted if employed in Govt service",
+      "Field sources:{Document title:[\"Page 1\",\"Page 2\"],Issuing department:[\"Page 7\"],\"date\":[\"Page 1\",\"Page 8\"],Reference number:[\"Page 1\",\"Page 8\"]"
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "document_type": [
+      1
+     ],
+     "issuing_department": [
+      1,
+      7
+     ],
+     "date": [
+      1,
+      7
+     ],
+     "reference_number": [
+      1
+     ],
+     "amount": [
+      2
+     ],
+     "deadline": [
+      4
+     ],
+     "important_dates": [
+      4
+     ],
+     "eligibility_criteria": [
+      4
+     ]
+    },
+    "additional_fields": [],
+    "field_evidence_pages": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7
+    ],
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "main_points": [
+     "Provides Rs.15k/annum assistance to rural (<Rs.10k/mo) or urban (<Rs.12k/mo) families with specific land/electricity limits (p.3).",
+     "Excludes ITI/Poly students; requires 75% attendance and prohibits municipal property ownership over 1,000 sq ft (p.4-5).",
+     "Disbursement via GSWS/Finance using DBT codes to mothers' accounts or guardians for single parents (p.4-5).",
+     "Scholarships from Centrally Sponsored Schemes supplement the scheme; social audits and grievance mechanisms mandated by U.O.No. FIN01-FMU0PC(SE)/1/2025 (p.6-7)."
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [
+     "15"
+    ],
+    "summary": "The Andhra Pradesh Government issued G.O.MS.No. 26 on June 12, 2025, to implement the 'Thalliki Vandanam' scheme providing Rs.15,000/year via DBT for eligible children in Classes I-XII from recognized schools.",
+    "summary_coverage": {
+     "sections": 3,
+     "characters_used": 11762,
+     "section_pages": [
+      [
+       1,
+       3
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "characters_total": 13218
+    },
+    "category": "scholarship"
+   },
+   "total_seconds": 532.4
+  },
+  {
+   "document": "dsert-kannada-bagless-day-circular-2026.pdf",
+   "pages": 2,
+   "scanned_pages": [
+    1,
+    2
+   ],
+   "characters": 4346,
+   "detected_language": "Kannada",
+   "stages": {
+    "text extraction": 0.672,
+    "ocr": 485.79,
+    "language detection": 0.0049,
+    "analysis (fields + summary)": 161.49,
+    "categorisation": 0.0048,
+    "retrieval (one question)": 0.0131
+   },
+   "ocr_calls": [
+    {
+     "mode": "ocr",
+     "seconds": 291.73,
+     "images": 1,
+     "prompt_eval_count": 1958,
+     "eval_count": 1749,
+     "prompt_eval_seconds": 92.0,
+     "eval_seconds": 199.21,
+     "load_seconds": 0.03
+    },
+    {
+     "mode": "ocr",
+     "seconds": 192.02,
+     "images": 1,
+     "prompt_eval_count": 1958,
+     "eval_count": 1107,
+     "prompt_eval_seconds": 80.41,
+     "eval_seconds": 111.23,
+     "load_seconds": 0.03
+    }
+   ],
+   "analysis_calls": [
+    {
+     "mode": "document",
+     "seconds": 89.46,
+     "images": 0,
+     "prompt_eval_count": 3408,
+     "eval_count": 209,
+     "prompt_eval_seconds": 62.52,
+     "eval_seconds": 26.57,
+     "load_seconds": 0.01
+    },
+    {
+     "mode": "summary",
+     "seconds": 72.0,
+     "images": 0,
+     "prompt_eval_count": 3060,
+     "eval_count": 174,
+     "prompt_eval_seconds": 53.75,
+     "eval_seconds": 18.06,
+     "load_seconds": 0.01
+    }
+   ],
+   "translations": {
+    "Kannada": {
+     "cold_seconds": 22.58,
+     "cached_seconds": 0.001,
+     "error": "",
+     "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+     "model_calls": 0,
+     "output": {
+      "summary": "ಡಿ. ಎಸ್. ಇ. ಆರ್. ಟಿ. ಯ ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಈ ಸುತ್ತೋಲೆಯು ಸಿಬ್ಬಂದಿ ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ 2026-27ರ ಶೈಕ್ಷಣಿಕ ವರ್ಷದ ಆಂತರಿಕ ತರಬೇತಿ ಕಾರ್ಯಕ್ರಮವನ್ನು ಘೋಷಿಸುತ್ತದೆ, ಡಿಸೆಂಬರ್ 2026 ಮತ್ತು ಮೇ 2027ರ ನಡುವೆ ನಿಗದಿಪಡಿಸಲಾದ ಹತ್ತು ನಿರ್ದಿಷ್ಟ ಚಟುವಟಿಕೆಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
+      "main_points": [
+       "ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ (ಡಿ. ಎಸ್. ಇ. ಆರ್. ಟಿ.), ಬೆಂಗಳೂರು",
+       "ಶೈಕ್ಷಣಿಕ ವರ್ಷ: 2026-27; ದಿನಾಂಕ: 09-06-2026",
+       "ಡಿಸೆಂಬರ್-ಮೇ 2026/ಜುಲೈ-ಆಗಸ್ಟ್ 2027 ರಲ್ಲಿ ನಿರ್ದಿಷ್ಟ ದಿನಾಂಕಗಳೊಂದಿಗೆ ಪಟ್ಟಿ ಮಾಡಲಾದ ಹತ್ತು ಆಂತರಿಕ ತರಬೇತಿ ಚಟುವಟಿಕೆಗಳು",
+       "ಪ್ರತಿಕ್ರಿಯೆ ಮತ್ತು ವಿಚಾರಣೆಗಳಿಗಾಗಿ ಒದಗಿಸಲಾದ ಸಂಪರ್ಕ ಇಮೇಲ್",
+       "2019, 2023 ಮತ್ತು 2025ರ ಹಿಂದಿನ ಸಮಿತಿಯ ನಿರ್ಧಾರಗಳ ಉಲ್ಲೇಖ"
+      ],
+      "fields": {
+       "document_title": "ಚೀಲವಿಲ್ಲದ ದಿನ-2026-27 ಯೋಜನಾ ಸುತ್ತೋಲೆ",
+       "document_type": "ಯೋಜನೆಯ ಸೂಚನೆ/ಸುತ್ತೋಲೆ",
+       "issuing_department": "ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ, ಕರ್ನಾಟಕ",
+       "date": "09-06-2026",
+       "reference_number": "E-8146 DSERT/EVG/ಸಂಸ್ಥೆಯ ತೀರ್ಮಾನ/2026-27",
+       "important_dates": [
+        "09-06-2026: ವಿತರಣಾ ದಿನಾಂಕ",
+        "08-11-2023: ಹಿಂದಿನ ಯೋಜನೆಯ ಉಲ್ಲೇಖ"
+       ]
+      },
+      "additional_fields": [],
+      "service": "IndicTrans2 (indictrans2-en-indic-dist-200M) on this computer",
+      "is_indictrans2": true,
+      "fallback_reason": ""
+     }
+    }
+   },
+   "answers": [
+    {
+     "id": "bagless-01",
+     "question": "What is the date of this circular?",
+     "seconds": 37.05,
+     "error": "",
+     "answer": "The date of this circular is **09-06-2026**.",
+     "answer_language": "English",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 35.99,
+       "images": 0,
+       "prompt_eval_count": 1835,
+       "eval_count": 37,
+       "prompt_eval_seconds": 32.26,
+       "eval_seconds": 3.46,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": true,
+     "expected": "09-06-2026"
+    },
+    {
+     "id": "bagless-02",
+     "question": "How many self-learning activity modules were prepared for students?",
+     "seconds": 24.4,
+     "error": "",
+     "answer": "The document does not contain information about how many self-learning activity modules were prepared for students.",
+     "answer_language": "English",
+     "answer_pages": [],
+     "found": false,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 22.66,
+       "images": 0,
+       "prompt_eval_count": 1117,
+       "eval_count": 34,
+       "prompt_eval_seconds": 19.39,
+       "eval_seconds": 3.13,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": false,
+     "expected": {
+      "any_of": [
+       "10",
+       "ten"
+      ]
+     }
+    },
+    {
+     "id": "bagless-03",
+     "question": "Which module is scheduled for January 2027?",
+     "seconds": 17.17,
+     "error": "",
+     "answer": "The document does not contain information about any module scheduled for **January** 2027.",
+     "answer_language": "English",
+     "answer_pages": [],
+     "found": false,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question",
+       "seconds": 15.9,
+       "images": 0,
+       "prompt_eval_count": 794,
+       "eval_count": 38,
+       "prompt_eval_seconds": 11.95,
+       "eval_seconds": 3.87,
+       "load_seconds": 0.01
+      }
+     ],
+     "answer_correct": false,
+     "expected": {
+      "any_of": [
+       "Road safety",
+       "ರಸ್ತೆ ಸುರಕ್ಷತೆ"
+      ]
+     }
+    },
+    {
+     "id": "kannada-who-issued",
+     "question": "ಈ ದಾಖಲೆಯನ್ನು ಯಾರು ಹೊರಡಿಸಿದ್ದಾರೆ?",
+     "seconds": 54.02,
+     "error": "",
+     "answer": "ಈ ದಾಖಲೆಯನ್ನು **ಕರ್ನಾಟಕ ರಾಜ್ಯ ಶಿಕ್ಷಣ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ವಿಭಾಗ (DSERT)** ಹೊರಡಿಸಿದೆ. ಇದು ಬೆಂಗಳೂರು-560 085, ಬಾನಸಂಕಾರಿ ನಗರದಲ್ಲಿರುವ ಈ ದಾಖಲೆಯನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ.",
+     "answer_language": "Kannada",
+     "answer_pages": [
+      1
+     ],
+     "found": true,
+     "answer_method": "retrieved excerpts + model",
+     "model_calls": [
+      {
+       "mode": "question_translation",
+       "seconds": 2.09,
+       "images": 0,
+       "prompt_eval_count": 86,
+       "eval_count": 10,
+       "prompt_eval_seconds": 0.52,
+       "eval_seconds": 0.93,
+       "load_seconds": 0.01
+      },
+      {
+       "mode": "question",
+       "seconds": 51.92,
+       "images": 0,
+       "prompt_eval_count": 3021,
+       "eval_count": 111,
+       "prompt_eval_seconds": 40.38,
+       "eval_seconds": 11.38,
+       "load_seconds": 0.01
+      }
+     ]
+    }
+   ],
+   "field_checks": [
+    {
+     "case": "bagless-01",
+     "field": "date",
+     "expected": "09-06-2026",
+     "predicted": "09-06-2026",
+     "correct": true
+    },
+    {
+     "case": "bagless-02",
+     "field": "reference_number",
+     "expected": {
+      "any_of": [
+       "E- 8146 DSERT/EVG/ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27",
+       "E-8146 DSERT/EVG/Sambhrama Shanivara/2026-27"
+      ]
+     },
+     "predicted": "E-8146 DSERT/EVG/ಸಂಸ್ಥೆಯ ತೀರ್ಮಾನ/2026-27",
+     "correct": false
+    },
+    {
+     "case": "bagless-03",
+     "field": "issuing_department",
+     "expected": {
+      "any_of": [
+       "Department of State Educational Research and Training",
+       "DSERT",
+       "ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ"
+      ]
+     },
+     "predicted": "Department of State Educational Research and Training, Karnataka",
+     "correct": true
+    }
+   ],
+   "analysis": {
+    "document_type": "Scheme Notice/Circular",
+    "language": "Kannada/English mix (transliterated)",
+    "summary": "This Karnataka government circular from DSERT announces the 2026-27 academic year's internal training program for staff and students, listing ten specific activities scheduled between December 2026 and May 2027.",
+    "main_points": [
+     "Department of State Educational Research and Training (DSERT), Bengaluru",
+     "Academic Year: 2026-27; Date: 09-06-2026",
+     "Ten internal training activities listed with specific dates in Dec-May 2026/July-Aug 2027",
+     "Contact email provided for feedback and inquiries",
+     "Reference to previous committee decisions from 2019, 2023, and 2025"
+    ],
+    "fields": {
+     "document_title": "Bagless Day - 2026-27 Scheme Circular",
+     "document_type": "Scheme Notice/Circular",
+     "issuing_department": "Department of State Educational Research and Training, Karnataka",
+     "date": "09-06-2026",
+     "reference_number": "E-8146 DSERT/EVG/ಸಂಸ್ಥೆಯ ತೀರ್ಮಾನ/2026-27",
+     "important_dates": [
+      "09-06-2026: Issue Date",
+      "08-11-2023: Previous Scheme Reference"
+     ]
+    },
+    "field_sources": {
+     "document_title": [
+      1
+     ],
+     "issuing_department": [
+      1
+     ],
+     "date": [
+      1
+     ],
+     "reference_number": [
+      1
+     ],
+     "important_dates": [
+      1
+     ]
+    },
+    "additional_fields": [],
+    "summary_coverage": {
+     "sections": 1,
+     "characters_used": 4346,
+     "characters_total": 4346
+    },
+    "analysis_backends": [
+     "Local Ollama"
+    ],
+    "analysis_models": [
+     "qwen3.5:4b"
+    ],
+    "ungrounded_values": [],
+    "summary_unverified_numbers": [],
+    "summary_retried": true,
+    "category": "scholarship"
+   },
+   "total_seconds": 803.2
+  }
+ ],
+ "indictrans2_load_seconds": 11.74,
+ "indictrans2_status": "downloaded"
+}

@@ -1,0 +1,9 @@
+# AI4Bharat IndicTrans2 translation (local, CPU). Installed automatically by
+# run_app.py; the app falls back to a general local model, and says so, if
+# these packages or the model are unavailable.
+torch>=2.1
+transformers>=4.40,<5
+sentencepiece>=0.2
+sacremoses>=0.1
+indic-nlp-library>=0.92
+regex

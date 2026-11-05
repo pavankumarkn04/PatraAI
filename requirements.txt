@@ -1,0 +1,7 @@
+streamlit>=1.40
+Pillow>=10.0
+requests>=2.31
+PyMuPDF>=1.24
+python-docx>=1.1
+# Embeds an Indian-script font in the summary PDF download.
+fonttools>=4.40
