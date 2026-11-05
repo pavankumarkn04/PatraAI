@@ -47,7 +47,7 @@ Every expected value was read from the cited page of the original document: its 
 | `central-obc-ncl-certificate-format.pdf` | English | Government certificate (prescribed format) | Searchable + scanned page | https://cdnbbsr.s3waas.gov.in/s313111c20aee51aeb480ecbd988cd8cc9/uploads/2024/06/2024060566.pdf |
 | `odisha-ews-income-asset-certificate-form.pdf` | English | Application form and certificate format | Searchable | https://cdnbbsr.s3waas.gov.in/s3kv051f1ec528491d7b97c00f6443761f/uploads/2025/03/2025032624.pdf |
 | `punjab-income-certificate-application.pdf` | English + Punjabi | Application form | Searchable + scanned pages | https://punjab.gov.in/wp-content/uploads/2020/05/Issuance-of-Income-Certificate.pdf |
-| `cs3235-mini-project-sheet.docx` | English | Educational document | Word | CS3235 mini-project sheet (course document) |
+| `cs3235-mini-project-sheet.docx` | English | Educational document | Word | CS3235 project sheet (course document) |
 
 All documents are publicly published government or institutional documents, or the course document, used unmodified for academic evaluation, apart from the two labelled derivatives. Blank forms and formats contain no personal data. The government orders name only the signing officials.
 

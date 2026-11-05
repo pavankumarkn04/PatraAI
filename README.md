@@ -4,7 +4,7 @@
 
 ![PatraAI pipeline](docs/pipeline.png)
 
-PatraAI is CS3235 Mini-Project 3, the **Indian Document Understanding Tool**: a general-purpose application for Indian notices, circulars, forms, certificates, brochures, letters, scheme documents and other documents. It works on any uploaded document; nothing is tied to a particular document, template or department. The project sheet specifies BharatGen Patram (vision-language model) and AI4Bharat IndicTrans2 as models, and **field-extraction accuracy and QA accuracy** on 30–50 representative test cases with failure analysis as the evaluation.
+PatraAI is a CS3235 project, the **Indian Document Understanding Tool**: a general-purpose application for Indian notices, circulars, forms, certificates, brochures, letters, scheme documents and other documents. It works on any uploaded document; nothing is tied to a particular document, template or department. The project sheet specifies BharatGen Patram (vision-language model) and AI4Bharat IndicTrans2 as models, and **field-extraction accuracy and QA accuracy** on 30–50 representative test cases with failure analysis as the evaluation.
 
 **Website** (one page):
 
