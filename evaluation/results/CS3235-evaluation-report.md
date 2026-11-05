@@ -1,16 +1,16 @@
 # PatraAI — CS3235 Project 3 evaluation report
 
-*Indian Document Understanding Tool. Generated 2026-11-05 15:03:19 UTC from an actual evaluation run with the qwen3.5:4b model (ollama).*
+*Indian Document Understanding Tool. Generated 2026-11-05 16:17:34 UTC from an actual evaluation run with the qwen3.5:4b model (ollama).*
 
 ## 1. Results
 
 | Metric | Result |
 | --- | --- |
 | Test cases evaluated | 45 of 45 |
-| **Field-extraction accuracy** | **64.4%** (29 of 45 fields) |
-| **QA accuracy** | **66.7%** (30 of 45 answers) |
-| Answer page-reference accuracy | 66.7% |
-| Test cases with every field and the answer correct | 22 |
+| **Field-extraction accuracy** | **75.6%** (34 of 45 fields) |
+| **QA accuracy** | **77.8%** (35 of 45 answers) |
+| Answer page-reference accuracy | 77.8% |
+| Test cases with every field and the answer correct | 27 |
 | Processing errors | 0 |
 
 ## 2. Dataset
@@ -51,9 +51,9 @@
 | --- | --- | --- | --- |
 | English | 25 | 76.0% | 88.0% |
 | English + Punjabi | 2 | 100.0% | 100.0% |
-| Hindi | 7 | 57.1% | 71.4% |
-| Kannada | 6 | 33.3% | 16.7% |
-| Malayalam | 2 | 50.0% | 0.0% |
+| Hindi | 7 | 71.4% | 71.4% |
+| Kannada | 6 | 100.0% | 83.3% |
+| Malayalam | 2 | 50.0% | 50.0% |
 | Tamil | 3 | 33.3% | 0.0% |
 
 ## 4. Results by document type
@@ -64,13 +64,13 @@
 | Application form | 2 | 100.0% | 100.0% |
 | Application form + certificate format | 2 | 50.0% | 100.0% |
 | Educational document | 2 | 50.0% | 100.0% |
-| Gazette notification | 2 | 50.0% | 0.0% |
+| Gazette notification | 2 | 50.0% | 50.0% |
 | Government certificate (prescribed format) | 2 | 100.0% | 100.0% |
-| Government circular | 6 | 33.3% | 16.7% |
+| Government circular | 6 | 100.0% | 83.3% |
 | Government order | 2 | 100.0% | 100.0% |
 | Government scheme order | 3 | 66.7% | 66.7% |
 | Notification with schedule table | 2 | 100.0% | 100.0% |
-| Official circular / letter | 3 | 66.7% | 100.0% |
+| Official circular / letter | 3 | 100.0% | 100.0% |
 | Official proceedings / letter | 2 | 100.0% | 100.0% |
 | Press release / notice | 3 | 100.0% | 100.0% |
 | Public policy document | 3 | 33.3% | 0.0% |
@@ -82,12 +82,12 @@
 | Group | Cases | Field-extraction accuracy | QA accuracy |
 | --- | --- | --- | --- |
 | Image (JPG) | 1 | 100.0% | 100.0% |
-| Legacy-font PDF (needs OCR) | 3 | 66.7% | 33.3% |
+| Legacy-font PDF (needs OCR) | 3 | 100.0% | 66.7% |
 | Long PDF (83 pages, mostly searchable) | 3 | 33.3% | 0.0% |
 | Mixed PDF (searchable + scanned page) | 2 | 100.0% | 100.0% |
 | Mixed PDF (searchable + scanned pages) | 6 | 66.7% | 66.7% |
-| Scanned PDF | 7 | 42.9% | 28.6% |
-| Scanned PDF with OCR text layer | 3 | 66.7% | 100.0% |
+| Scanned PDF | 7 | 85.7% | 85.7% |
+| Scanned PDF with OCR text layer | 3 | 100.0% | 100.0% |
 | Searchable PDF | 18 | 72.2% | 83.3% |
 | Word (DOCX) | 2 | 50.0% | 100.0% |
 
@@ -95,8 +95,8 @@
 
 | Group | Cases | Field-extraction accuracy | QA accuracy |
 | --- | --- | --- | --- |
-| derived | 3 | 66.7% | 33.3% |
-| real | 42 | 64.3% | 69.0% |
+| derived | 3 | 66.7% | 66.7% |
+| real | 42 | 76.2% | 78.6% |
 
 ## 7. Correct and incorrect predictions
 
@@ -113,14 +113,14 @@
 | chd-03 | Hindi | Vacancy circular | Mixed PDF (searchable + scanned pages) | 0/1 | correct | correct |
 | chd-04 | Hindi | Vacancy circular | Mixed PDF (searchable + scanned pages) | 0/1 | incorrect | incorrect |
 | law-01 | Hindi | Official circular / letter | Scanned PDF with OCR text layer | 1/1 | correct | correct |
-| law-02 | Hindi | Official circular / letter | Scanned PDF with OCR text layer | 0/1 | correct | correct |
+| law-02 | Hindi | Official circular / letter | Scanned PDF with OCR text layer | 1/1 | correct | correct |
 | law-03 | Hindi | Official circular / letter | Scanned PDF with OCR text layer | 1/1 | correct | correct |
-| fln-01 | Kannada | Government circular | Scanned PDF | 0/1 | incorrect | incorrect |
-| fln-02 | Kannada | Government circular | Scanned PDF | 0/1 | incorrect | incorrect |
-| fln-03 | Kannada | Government circular | Scanned PDF | 0/1 | incorrect | incorrect |
-| bagless-01 | Kannada | Government circular | Legacy-font PDF (needs OCR) | 1/1 | correct | correct |
-| bagless-02 | Kannada | Government circular | Legacy-font PDF (needs OCR) | 0/1 | incorrect | incorrect |
-| bagless-03 | Kannada | Government circular | Legacy-font PDF (needs OCR) | 1/1 | incorrect | correct |
+| fln-01 | Kannada | Government circular | Scanned PDF | 1/1 | correct | correct |
+| fln-02 | Kannada | Government circular | Scanned PDF | 1/1 | correct | correct |
+| fln-03 | Kannada | Government circular | Scanned PDF | 1/1 | correct | correct |
+| bagless-01 | Kannada | Government circular | Legacy-font PDF (needs OCR) | 1/1 | incorrect | correct |
+| bagless-02 | Kannada | Government circular | Legacy-font PDF (needs OCR) | 1/1 | correct | correct |
+| bagless-03 | Kannada | Government circular | Legacy-font PDF (needs OCR) | 1/1 | correct | correct |
 | tnscholar-01 | English | Scholarship notification | Searchable PDF | 0/1 | correct | correct |
 | tnscholar-02 | English | Scholarship notification | Searchable PDF | 1/1 | incorrect | incorrect |
 | tnscholar-03 | English | Scholarship notification | Searchable PDF | 1/1 | correct | incorrect |
@@ -131,8 +131,8 @@
 | tapolicy-01 | Tamil | Public policy document | Long PDF (83 pages, mostly searchable) | 0/1 | incorrect | incorrect |
 | tapolicy-02 | Tamil | Public policy document | Long PDF (83 pages, mostly searchable) | 1/1 | incorrect | incorrect |
 | tapolicy-03 | Tamil | Public policy document | Long PDF (83 pages, mostly searchable) | 0/1 | incorrect | incorrect |
-| klgazette-01 | Malayalam | Gazette notification | Scanned PDF | 0/1 | incorrect | correct |
-| klgazette-02 | Malayalam | Gazette notification | Scanned PDF | 1/1 | incorrect | incorrect |
+| klgazette-01 | Malayalam | Gazette notification | Scanned PDF | 0/1 | correct | correct |
+| klgazette-02 | Malayalam | Gazette notification | Scanned PDF | 1/1 | incorrect | correct |
 | tgschedule-01 | English | Notification with schedule table | Scanned PDF | 1/1 | correct | correct |
 | tgschedule-02 | English | Notification with schedule table | Scanned PDF | 1/1 | correct | correct |
 | tgorder-01 | English | Government order | Searchable PDF | 1/1 | correct | correct |
@@ -152,12 +152,11 @@
 
 | Category | Incorrect checks |
 | --- | --- |
-| Wrong or missing page reference | 15 |
-| Incorrect answer | 9 |
-| Incorrect extracted value | 9 |
+| Wrong or missing page reference | 10 |
+| Incorrect answer | 8 |
 | Missing extracted field | 6 |
-| Answer not found in document (model abstained) | 4 |
-| OCR or document-reading failure | 3 |
+| Incorrect extracted value | 5 |
+| Answer not found in document (model abstained) | 2 |
 
 ## 9. Examples: expected versus predicted
 
@@ -170,16 +169,7 @@
 | chd-03 | Hindi | reference_number | 2-5/2020 | CBC2152/11/0002/2526,EN32/33 | Incorrect extracted value |
 | chd-04 | Hindi | required_documents | APAR / Annual Performance Appraisal / वार्षिक कार्य-निष्पादन मूल्यांकन रिपोर्ट / integrity certificate / सत्यनिष्ठा प्रमाण-पत्र |  | Missing extracted field |
 | chd-04 | Hindi | answer | Sangita James / संगीता जेम्स | The vacancy circular was signed by **Sangita Jha**, who is identified in the document as an Administrative Officer (Administrative) of the Central Hindi Directo | Incorrect answer |
-| law-02 | Hindi | date | 24 अक्टूबर, 2025 / 24 October 2025 |  | Missing extracted field |
-| fln-01 | Kannada | issuing_department | Department of State Educational Research and Training / DSERT / ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ | Government of Karnataka, Department of School Education and Literacy | Incorrect extracted value |
-| fln-01 | Kannada | answer | Department of State Educational Research and Training / DSERT / ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ | The issuing department was not found in the document. | OCR or document-reading failure |
-| fln-02 | Kannada | reference_number | E-110911/DSERT/NEP/ECCE/15/2026-TECD | Not explicitly stated as a single reference number; mentions SATS technical department. | Incorrect extracted value |
-| fln-02 | Kannada | answer | 15 days / 15 ದಿನಗಳು | The document does not contain information about a 'bridge programme' or its duration in June. | OCR or document-reading failure |
-| fln-03 | Kannada | date | 07/08/2026 |  | OCR or document-reading failure |
-| fln-03 | Kannada | answer | 2nd Saturday / second Saturday / 2ನೇ ಶನಿವಾರ | The document does not specify a particular day (such as 'Saturday') for holding the head teachers' meeting regarding FLN. | Answer not found in document (model abstained) |
-| bagless-02 | Kannada | reference_number | E- 8146 DSERT/EVG/ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27 / E-8146 DSERT/EVG/Sambhrama Shanivara/2026-27 | E-8146 DSERT/EVG/ ಸಾಧುವ ತೀವರತ/2026-27 | Incorrect extracted value |
-| bagless-02 | Kannada | answer | 10 / ten | The document does not state how many self-learning activity modules were prepared. | Answer not found in document (model abstained) |
-| bagless-03 | Kannada | answer | Road safety / ರಸ್ತೆ ಸುರಕ್ಷತೆ | The **Jan-2027** (January 2027) module corresponds to entry number **8**, titled '**ರನ್ ಸಂದೇತ**' (**Run Sandeeta**), with the reference code **ಜಾನವ - 2027**. | Incorrect answer |
+| bagless-01 | Kannada | answer | 09-06-2026 | The document states that the number (ಸಂಖ್ಯೆ) for this circular is E- 8146 DSERT/EVG/ ಸ೦ಭ್ರಮ ಶನಿವಾರ/2026-27, but it does not explicitly state a specific date of  | Incorrect answer |
 | tnscholar-01 | English | reference_number | DBC/5/2025-D2-2 / DBC/ 5 /2025-D2-2 | Lr.No DBC/ 5 /2025-D2-2, G.O.(Ms).No.72 BC MBC & MW Department Dt:12.11.2019 | Incorrect extracted value |
 | tnscholar-02 | English | answer | Rs.2.00 Lakh / 2.00 Lakh / 2 lakh | The document states: RS 30. [Page 12] | Incorrect answer |
 | apscheme-01 | English | reference_number | G.O.MS.No. 26 / G.O.Ms.No.26 | G.O.Rt.No. 326, G.O.Ms.No.9, Comp. No. 2858012 | Incorrect extracted value |
@@ -189,18 +179,18 @@
 | tapolicy-02 | Tamil | answer | 1.16 crore / 1.16 கோடி | The number of students as of March 2024 was not found in the document. | Incorrect answer |
 | tapolicy-03 | Tamil | amount | 44,042 கோடி / Rs. 44,042 crore / 44,042 crore |  | Missing extracted field |
 | tapolicy-03 | Tamil | answer | 13.7% | The document does not contain information about the share of total state expenditure allocated to school education. | Answer not found in document (model abstained) |
-| klgazette-01 | Malayalam | reference_number | G.O.(P) No. 145/2013/G.Edn / 145/2013 | KERBIL/2012/45073 / KL/TV(N)/634/2012-14 | Incorrect extracted value |
-| klgazette-01 | Malayalam | answer | 145/2013 | The Government Order (G.O.) number mentioned in the document is **KERBIL/2012/45073**. | Incorrect answer |
-| klgazette-02 | Malayalam | answer | Right to Service Act / സേവനാവകാശ | The document does not explicitly state under which specific Act (e.g., Indian Marriage Laws) the notification was issued. | Incorrect answer |
+| klgazette-01 | Malayalam | reference_number | G.O.(P) No. 145/2013/G.Edn / 145/2013 |  | Missing extracted field |
+| klgazette-02 | Malayalam | answer | Right to Service Act / സേവനാവകാശ | This notification is issued under **Section 2(0)** of the Kerala State Service Eligibility Rules (2012-921) [Page 1]. | Incorrect answer |
 | odisha-02 | English | required_documents | Voter ID / Aadhaar / IT returns / RoR |  | Missing extracted field |
+| docx-02 | English | important_instructions | 30–50 representative test cases / 30-50 representative test cases | Confirm specific checkpoint availability, licensing, language coverage, GPU requirements before assigning a model.; Dataset benchmarks are not substitutes for t | Incorrect extracted value |
 
 ## 10. Observations
 
 - By document format, QA accuracy was highest for Mixed PDF (searchable + scanned page) (100.0%, 2 cases) and lowest for Long PDF (83 pages, mostly searchable) (0.0%, 3 cases).
-- By language, QA accuracy was highest for English + Punjabi (100.0%, 2 cases) and lowest for Malayalam (0.0%, 2 cases).
-- By document type, QA accuracy was highest for Application form (100.0%, 2 cases) and lowest for Gazette notification (0.0%, 2 cases).
-- The most common failure category was "Wrong or missing page reference": 15 of 46 incorrect checks.
-- Answers came from: retrieved excerpts + model (26), whole document + model (17), source-text match (2).
+- By language, QA accuracy was highest for English + Punjabi (100.0%, 2 cases) and lowest for Tamil (0.0%, 3 cases).
+- By document type, QA accuracy was highest for Application form (100.0%, 2 cases) and lowest for Public policy document (0.0%, 3 cases).
+- The most common failure category was "Wrong or missing page reference": 10 of 31 incorrect checks.
+- Answers came from: retrieved excerpts + model (28), whole document + model (15), source-text match (2).
 
 ## 11. Limitations
 

@@ -158,15 +158,16 @@ py -3.11 evaluation/run_evaluation.py --report   # rebuild the report from saved
 
 ### Results (all 45 test cases, `qwen3.5:4b` on a CPU-only laptop)
 
-| Metric | Result |
-| --- | --- |
-| Field-extraction accuracy | **64.4%** (29 of 45) |
-| QA accuracy | **66.7%** (30 of 45) |
-| Answer cited the correct page | 66.7% |
-| Processing errors | 0 |
-| English documents (25 cases) | field 76.0%, QA 88.0% |
+| Metric | First run | After fixes |
+| --- | --- | --- |
+| Field-extraction accuracy | 64.4% (29 of 45) | **75.6%** (34 of 45) |
+| QA accuracy | 66.7% (30 of 45) | **77.8%** (35 of 45) |
+| Answer cited the correct page | 66.7% | 77.8% |
+| Processing errors | 0 | 0 |
 
-Most wrong results have two root causes: scanned Kannada and Malayalam pages that the 4B vision model read badly (10 of 31 wrong checks), and long documents where the right page never reached the model (10). The full failure analysis is in the [project report](docs/PatraAI_CS3235_Report.pdf), Section 5.4.
+The failure analysis of the first run showed that scanned Kannada and Malayalam pages were the main cause of errors. Two fixes followed: scanned pages are now read with Tesseract OCR and Indian-language packs (the page's script is detected first; the vision model is the fallback), and the date check understands Indian-language month names. The 11 cases on the four affected documents were run again; the other 34 keep their first-run results (`evaluation/results/first-run/` holds the first run). Remaining errors are mostly long documents where the right page is not retrieved. Details are in the [project report](docs/PatraAI_CS3235_Report.pdf), Chapter 5.
+
+**Tesseract setup (optional, recommended):** install Tesseract (for example `winget install UB-Mannheim.TesseractOCR`), download the `hin`, `kan`, `tam`, `tel`, `mal` and `pan` models from [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) into a folder with `eng` and `osd`, and set `TESSDATA_PREFIX` (and `TESSERACT_CMD` if Tesseract is not on PATH) in `.env`.
 
 Other command-line checks:
 
@@ -182,7 +183,7 @@ py -3.11 -m pytest -q
 - Patram is not configured, because it needs a GPU server (see above). The pipeline uses it automatically when a Patram endpoint is set. IndicTrans2 is installed and verified locally for all five target languages.
 - The benchmark has no Telugu document: no public Unicode Telugu government document was found, so Telugu *document understanding* is not measured (Telugu translation and Telugu questions are tested). Tamil (3 cases) and Malayalam (2 cases) are covered by few cases.
 - IndicTrans2 is installed for English → Indian languages only. Answers that must change between two Indian languages, or from an Indian language into English, are rewritten by the analysis model instead, and the answer's language is checked afterwards.
-- Scanned Indian-language pages: without Tesseract, OCR is done by the `qwen3.5:4b` vision model. Measured on a scanned Kannada notice, it read the digits and dates correctly but garbled most Kannada words (for example "ವಿಭಾಗ: ಶಿಕ್ಷಣ ಇಲಾಖೆ" became "ವೈಭಾಗ: ಕಳಿಯಾಲ ಅಲಾಮಿ"), so names and authorities extracted from such pages are unreliable. Installing Tesseract with the `kan`, `hin`, `tam`, `tel` and `mal` language packs (and `pip install pytesseract`) makes PatraAI use it automatically for scanned pages.
+- Scanned Indian-language pages: without Tesseract, OCR is done by the `qwen3.5:4b` vision model. Measured on a scanned Kannada notice, it read the digits and dates correctly but garbled most Kannada words (for example "ವಿಭಾಗ: ಶಿಕ್ಷಣ ಇಲಾಖೆ" became "ವೈಭಾಗ: ಕಳಿಯಾಲ ಅಲಾಮಿ"), so names and authorities extracted from such pages are unreliable. Installing Tesseract with Indian-language packs (see Results above) makes PatraAI use it automatically for scanned pages; this raised accuracy in the evaluation.
 - Romanised-question detection uses word lists. Short or unusual romanised questions may be detected as English; choose the response language explicitly in that case.
 - The app limits uploaded files to 15 MB. Model calls are sequential to keep CPU and memory use bounded. On a CPU-only computer each call takes roughly 30–130 seconds, so a long document takes several minutes, and every scanned page needs one extra call.
 - For long documents, the summary is built from each section's most informative passages, not every sentence. Specific details are answered through question retrieval, which searches all pages.

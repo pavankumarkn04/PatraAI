@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T15:03:19+00:00",
+ "generated_at": "2026-11-05T16:17:34+00:00",
  "pipeline": {
   "analysis_service": "ollama",
   "model": "qwen3.5:4b",
@@ -190,13 +190,13 @@
   "total_cases": 45,
   "evaluated_cases": 45,
   "field_checks": 45,
-  "field_correct": 29,
-  "field_accuracy": 0.6444,
+  "field_correct": 34,
+  "field_accuracy": 0.7556,
   "qa_checks": 45,
-  "qa_correct": 30,
-  "qa_accuracy": 0.6667,
-  "page_reference_accuracy": 0.6667,
-  "cases_fully_correct": 22,
+  "qa_correct": 35,
+  "qa_accuracy": 0.7778,
+  "page_reference_accuracy": 0.7778,
+  "cases_fully_correct": 27,
   "processing_errors": 0,
   "by_language": {
    "English": {
@@ -211,18 +211,18 @@
    },
    "Hindi": {
     "cases": 7,
-    "field_accuracy": 0.5714,
+    "field_accuracy": 0.7143,
     "qa_accuracy": 0.7143
    },
    "Kannada": {
     "cases": 6,
-    "field_accuracy": 0.3333,
-    "qa_accuracy": 0.1667
+    "field_accuracy": 1.0,
+    "qa_accuracy": 0.8333
    },
    "Malayalam": {
     "cases": 2,
     "field_accuracy": 0.5,
-    "qa_accuracy": 0.0
+    "qa_accuracy": 0.5
    },
    "Tamil": {
     "cases": 3,
@@ -254,7 +254,7 @@
    "Gazette notification": {
     "cases": 2,
     "field_accuracy": 0.5,
-    "qa_accuracy": 0.0
+    "qa_accuracy": 0.5
    },
    "Government certificate (prescribed format)": {
     "cases": 2,
@@ -263,8 +263,8 @@
    },
    "Government circular": {
     "cases": 6,
-    "field_accuracy": 0.3333,
-    "qa_accuracy": 0.1667
+    "field_accuracy": 1.0,
+    "qa_accuracy": 0.8333
    },
    "Government order": {
     "cases": 2,
@@ -283,7 +283,7 @@
    },
    "Official circular / letter": {
     "cases": 3,
-    "field_accuracy": 0.6667,
+    "field_accuracy": 1.0,
     "qa_accuracy": 1.0
    },
    "Official proceedings / letter": {
@@ -320,8 +320,8 @@
    },
    "Legacy-font PDF (needs OCR)": {
     "cases": 3,
-    "field_accuracy": 0.6667,
-    "qa_accuracy": 0.3333
+    "field_accuracy": 1.0,
+    "qa_accuracy": 0.6667
    },
    "Long PDF (83 pages, mostly searchable)": {
     "cases": 3,
@@ -340,12 +340,12 @@
    },
    "Scanned PDF": {
     "cases": 7,
-    "field_accuracy": 0.4286,
-    "qa_accuracy": 0.2857
+    "field_accuracy": 0.8571,
+    "qa_accuracy": 0.8571
    },
    "Scanned PDF with OCR text layer": {
     "cases": 3,
-    "field_accuracy": 0.6667,
+    "field_accuracy": 1.0,
     "qa_accuracy": 1.0
    },
    "Searchable PDF": {
@@ -363,28 +363,27 @@
    "derived": {
     "cases": 3,
     "field_accuracy": 0.6667,
-    "qa_accuracy": 0.3333
+    "qa_accuracy": 0.6667
    },
    "real": {
     "cases": 42,
-    "field_accuracy": 0.6429,
-    "qa_accuracy": 0.6905
+    "field_accuracy": 0.7619,
+    "qa_accuracy": 0.7857
    }
   },
   "by_model": {
    "qwen3.5:4b": {
     "cases": 45,
-    "field_accuracy": 0.6444,
-    "qa_accuracy": 0.6667
+    "field_accuracy": 0.7556,
+    "qa_accuracy": 0.7778
    }
   },
   "failure_categories": {
-   "Wrong or missing page reference": 15,
-   "Incorrect answer": 9,
-   "Incorrect extracted value": 9,
+   "Wrong or missing page reference": 10,
+   "Incorrect answer": 8,
    "Missing extracted field": 6,
-   "Answer not found in document (model abstained)": 4,
-   "OCR or document-reading failure": 3
+   "Incorrect extracted value": 5,
+   "Answer not found in document (model abstained)": 2
   }
  },
  "checks": [
@@ -863,7 +862,7 @@
    "check": "answer",
    "question": "Which department issued this circular?",
    "expected": "विधायी विभाग | Legislative Department",
-   "predicted": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय), specifically the **Legislative Department** (विधायी विभाग) under its **Official Language Section** (राजभाषा खंड), issued this circular.",
+   "predicted": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय) issued this circular through its Legislative Department's Hindi Section.",
    "result": "correct",
    "error_category": "",
    "source_pages": "1"
@@ -893,9 +892,9 @@
    "check": "date",
    "question": "",
    "expected": "24 अक्टूबर, 2025 | 24 October 2025",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "Missing extracted field",
+   "predicted": "24 October 2025",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -908,7 +907,7 @@
    "check": "answer",
    "question": "Which post is to be filled on deputation?",
    "expected": "प्रूफ रीडर | Proof Reader",
-   "predicted": "The post to be filled on deputation is **Proof Reader** (प्रूफ रीडर) in the Raj Bhasha Khanda, Legislative Department, Ministry of Law and Justice. The pay matrix for this post is ₹25,500–₹81,100.",
+   "predicted": "The post to be filled on deputation is **Proof Reader** (प्रूफ रीडर) in the Raj Bhasha Section, Legislative Department, Ministry of Law and Justice. The pay matrix for this post is ₹25,500–₹81,100.",
    "result": "correct",
    "error_category": "",
    "source_pages": "1"
@@ -938,7 +937,7 @@
    "check": "reference_number",
    "question": "",
    "expected": "ए-12026/1/2025 | A-12026/1/2025 | 12026/1/2025",
-   "predicted": "S.No. E-12026/1/2025-Admin",
+   "predicted": "S.No. E-12026/1/2025-Administration",
    "result": "correct",
    "error_category": "",
    "source_pages": "1"
@@ -953,7 +952,7 @@
    "check": "answer",
    "question": "What is the pay matrix range for the post?",
    "expected": "₹25500-81100 | 25500-81100",
-   "predicted": "The pay matrix range for the Post Reader position on contract basis is **₹25,500 – ₹81,100**.",
+   "predicted": "The pay matrix range for the Post Reader position on contract basis is **₹25,500 - ₹81,100**.",
    "result": "correct",
    "error_category": "",
    "source_pages": "1"
@@ -983,9 +982,9 @@
    "check": "issuing_department",
    "question": "",
    "expected": "Department of State Educational Research and Training | DSERT | ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ",
-   "predicted": "Government of Karnataka, Department of School Education and Literacy",
-   "result": "incorrect",
-   "error_category": "Incorrect extracted value",
+   "predicted": "Department of State Educational Research and Training (DSERT)",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -998,9 +997,9 @@
    "check": "answer",
    "question": "Which department issued this circular?",
    "expected": "Department of State Educational Research and Training | DSERT | ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ",
-   "predicted": "The issuing department was not found in the document.",
-   "result": "incorrect",
-   "error_category": "OCR or document-reading failure",
+   "predicted": "The document was issued by the **Department of State Educational Research and Training** (ಸಂಖ್ಯೆ : E-110911/ DSERT/NEP/ECCE/15/2026).",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1013,9 +1012,9 @@
    "check": "answer page",
    "question": "Which department issued this circular?",
    "expected": "1",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "Wrong or missing page reference",
+   "predicted": "1",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1028,9 +1027,9 @@
    "check": "reference_number",
    "question": "",
    "expected": "E-110911/DSERT/NEP/ECCE/15/2026-TECD",
-   "predicted": "Not explicitly stated as a single reference number; mentions SATS technical department.",
-   "result": "incorrect",
-   "error_category": "Incorrect extracted value",
+   "predicted": "E-110911/ DSERT/NEP/ECCE/15/2026-TECD",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1043,9 +1042,9 @@
    "check": "answer",
    "question": "For how many days was the bridge programme conducted in June?",
    "expected": "15 days | 15 ದಿನಗಳು",
-   "predicted": "The document does not contain information about a 'bridge programme' or its duration in June.",
-   "result": "incorrect",
-   "error_category": "OCR or document-reading failure",
+   "predicted": "The Bridge Programme (ಸೇತುಬಂಧ ಕಾರ್ಯಕ್ರಮ) was conducted for **15 days** during June.",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1058,9 +1057,9 @@
    "check": "answer page",
    "question": "For how many days was the bridge programme conducted in June?",
    "expected": "1",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "Wrong or missing page reference",
+   "predicted": "1",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1073,9 +1072,9 @@
    "check": "date",
    "question": "",
    "expected": "07/08/2026",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "OCR or document-reading failure",
+   "predicted": "07/08/2026",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1088,9 +1087,9 @@
    "check": "answer",
    "question": "On which Saturday of every month should the head teachers' meeting on FLN be held?",
    "expected": "2nd Saturday | second Saturday | 2ನೇ ಶನಿವಾರ",
-   "predicted": "The document does not specify a particular day (such as 'Saturday') for holding the head teachers' meeting regarding FLN.",
-   "result": "incorrect",
-   "error_category": "Answer not found in document (model abstained)",
+   "predicted": "The document states that the Head Teachers' Meeting regarding FLN (Functional Literacy Numeracy) achievement should be held **on the second Saturday** of every month. This is explicitly mentioned under the responsibilities of Cluster and Block levels.",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "2"
   },
   {
@@ -1103,9 +1102,9 @@
    "check": "answer page",
    "question": "On which Saturday of every month should the head teachers' meeting on FLN be held?",
    "expected": "2",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "Wrong or missing page reference",
+   "predicted": "2",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "2"
   },
   {
@@ -1133,9 +1132,9 @@
    "check": "answer",
    "question": "What is the date of this circular?",
    "expected": "09-06-2026",
-   "predicted": "The date of this circular is **09-06-2026**.",
-   "result": "correct",
-   "error_category": "",
+   "predicted": "The document states that the number (ಸಂಖ್ಯೆ) for this circular is E- 8146 DSERT/EVG/ ಸ೦ಭ್ರಮ ಶನಿವಾರ/2026-27, but it does not explicitly state a specific date of issue. It references other documents with dates such as **03-05-2019**, **28-10-2022**, and mentions the academic year starting from **June 2026** for the first module.",
+   "result": "incorrect",
+   "error_category": "Incorrect answer",
    "source_pages": "1"
   },
   {
@@ -1163,9 +1162,9 @@
    "check": "reference_number",
    "question": "",
    "expected": "E- 8146 DSERT/EVG/ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27 | E-8146 DSERT/EVG/Sambhrama Shanivara/2026-27",
-   "predicted": "E-8146 DSERT/EVG/ ಸಾಧುವ ತೀವರತ/2026-27",
-   "result": "incorrect",
-   "error_category": "Incorrect extracted value",
+   "predicted": "E - 8146 DSERT/EVG/ ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1178,9 +1177,9 @@
    "check": "answer",
    "question": "How many self-learning activity modules were prepared for students?",
    "expected": "10 | ten",
-   "predicted": "The document does not state how many self-learning activity modules were prepared.",
-   "result": "incorrect",
-   "error_category": "Answer not found in document (model abstained)",
+   "predicted": "10",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1193,9 +1192,9 @@
    "check": "answer page",
    "question": "How many self-learning activity modules were prepared for students?",
    "expected": "1",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "Wrong or missing page reference",
+   "predicted": "1",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1208,7 +1207,7 @@
    "check": "issuing_department",
    "question": "",
    "expected": "Department of State Educational Research and Training | DSERT | ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ",
-   "predicted": "Department of State Educational Research and Training, Karnataka Government",
+   "predicted": "Department of State Educational Research and Training (DSERT)",
    "result": "correct",
    "error_category": "",
    "source_pages": "1"
@@ -1223,9 +1222,9 @@
    "check": "answer",
    "question": "Which module is scheduled for January 2027?",
    "expected": "Road safety | ರಸ್ತೆ ಸುರಕ್ಷತೆ",
-   "predicted": "The **Jan-2027** (January 2027) module corresponds to entry number **8**, titled '**ರನ್ ಸಂದೇತ**' (**Run Sandeeta**), with the reference code **ಜಾನವ - 2027**.",
-   "result": "incorrect",
-   "error_category": "Incorrect answer",
+   "predicted": "Module **8** titled \"Road Safety\" (ರಸ್ತೆ ಸುರಕ್ಷತೆ) is scheduled for **January - 2027**.",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1703,9 +1702,9 @@
    "check": "reference_number",
    "question": "",
    "expected": "G.O.(P) No. 145/2013/G.Edn | 145/2013",
-   "predicted": "KERBIL/2012/45073 / KL/TV(N)/634/2012-14",
+   "predicted": "",
    "result": "incorrect",
-   "error_category": "Incorrect extracted value",
+   "error_category": "Missing extracted field",
    "source_pages": "1"
   },
   {
@@ -1718,9 +1717,9 @@
    "check": "answer",
    "question": "What is the G.O. number of this notification?",
    "expected": "145/2013",
-   "predicted": "The Government Order (G.O.) number mentioned in the document is **KERBIL/2012/45073**.",
-   "result": "incorrect",
-   "error_category": "Incorrect answer",
+   "predicted": "The Government Order (G.O.) number for this notification is **145/2013/൫പാ.വി.൮വ.**",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -1748,7 +1747,7 @@
    "check": "issuing_department",
    "question": "",
    "expected": "General Education (G) Department | General Education Department | പൊതുവിദ്യാഭ്യാസ (ജി) വകുപ്പ് | Government of Kerala",
-   "predicted": "Government of Kerala, Ministry of Education (Barathvidyotsa Department)",
+   "predicted": "Government of Kerala, Department of Public Education (General)",
    "result": "correct",
    "error_category": "",
    "source_pages": "1"
@@ -1763,7 +1762,7 @@
    "check": "answer",
    "question": "Under which Act is this notification issued?",
    "expected": "Right to Service Act | സേവനാവകാശ",
-   "predicted": "The document does not explicitly state under which specific Act (e.g., Indian Marriage Laws) the notification was issued.",
+   "predicted": "This notification is issued under **Section 2(0)** of the Kerala State Service Eligibility Rules (2012-921) [Page 1].",
    "result": "incorrect",
    "error_category": "Incorrect answer",
    "source_pages": "1"
@@ -1778,9 +1777,9 @@
    "check": "answer page",
    "question": "Under which Act is this notification issued?",
    "expected": "1",
-   "predicted": "",
-   "result": "incorrect",
-   "error_category": "Wrong or missing page reference",
+   "predicted": "1",
+   "result": "correct",
+   "error_category": "",
    "source_pages": "1"
   },
   {
@@ -3619,7 +3618,7 @@
    },
    "fingerprint": "ce94db449214f2c8",
    "error": "",
-   "predicted_answer": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय), specifically the **Legislative Department** (विधायी विभाग) under its **Official Language Section** (राजभाषा खंड), issued this circular.",
+   "predicted_answer": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय) issued this circular through its Legislative Department's Hindi Section.",
    "predicted_pages": [
     1
    ],
@@ -3627,29 +3626,33 @@
    "predicted_fields": {
     "document_type": "Circular",
     "issuing_department": "Ministry of Law and Justice, India (Department of Legislation)",
-    "reference_number": "S.No. E-12026/1/2025-Admin",
+    "date": "24 October 2025",
+    "reference_number": "S.No. E-12026/1/2025-Administration",
     "amount": "Salary Matrix Rs. 25,500 - 81,100",
     "deadline": "Not specified in text (application form required)",
+    "important_dates": [
+     "Before January 1, 2016 for service calculation"
+    ],
     "eligibility_criteria": [
-     "(i) Passed Class XII from recognized board/university",
-     "(ii) Two years Hindi proof reading experience at printing press/news agency",
-     "(iii) High school level Hindi as subject or medium of instruction"
+     "Must have completed Class XII from recognized board/university.",
+     "Two years Hindi proofreading experience at printing press or newspaper publisher.",
+     "High school level proficiency in Hindi as a subject or medium of instruction."
     ],
     "required_documents": [
-     "Life history form with supporting documents",
-     "Proof of educational qualifications and experience"
+     "Life history form (Annexure-1).",
+     "Supporting documents for education and experience claims."
     ],
     "application_procedure": [
-     "(i) Apply for the post via official notification link on Ministry website",
-     "(ii) Submit life history form along with required certificates to selection committee"
+     "Submit application via prescribed format attached to the circular.",
+     "Attach supporting documents with life history form."
     ]
    },
-   "summary": "This circular from the Indian Ministry of Law and Justice announces a direct recruitment for Proof Reader posts in Hindi. The positions are under Contractual Service (CS) with specific salary ranges.",
+   "summary": "This circular announces a recruitment vacancy for Proof Reader under the Department of Legislation, Ministry of Law and Justice. It outlines eligibility criteria including educational qualifications and specific Hindi proofreading experience.",
    "models": [
     "qwen3.5:4b"
    ],
    "ocr_pages": [],
-   "seconds": 166.2,
+   "seconds": 263.3,
    "checks": [
     {
      "kind": "field",
@@ -3678,7 +3681,7 @@
        "Legislative Department"
       ]
      },
-     "predicted": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय), specifically the **Legislative Department** (विधायी विभाग) under its **Official Language Section** (राजभाषा खंड), issued this circular.",
+     "predicted": "The **Ministry of Law and Justice** (विधि और न्याय मंत्रालय) issued this circular through its Legislative Department's Hindi Section.",
      "correct": true,
      "error_category": "",
      "pages": [
@@ -3740,7 +3743,7 @@
    },
    "fingerprint": "8123f4e4aa466153",
    "error": "",
-   "predicted_answer": "The post to be filled on deputation is **Proof Reader** (प्रूफ रीडर) in the Raj Bhasha Khanda, Legislative Department, Ministry of Law and Justice. The pay matrix for this post is ₹25,500–₹81,100.",
+   "predicted_answer": "The post to be filled on deputation is **Proof Reader** (प्रूफ रीडर) in the Raj Bhasha Section, Legislative Department, Ministry of Law and Justice. The pay matrix for this post is ₹25,500–₹81,100.",
    "predicted_pages": [
     1
    ],
@@ -3748,29 +3751,33 @@
    "predicted_fields": {
     "document_type": "Circular",
     "issuing_department": "Ministry of Law and Justice, India (Department of Legislation)",
-    "reference_number": "S.No. E-12026/1/2025-Admin",
+    "date": "24 October 2025",
+    "reference_number": "S.No. E-12026/1/2025-Administration",
     "amount": "Salary Matrix Rs. 25,500 - 81,100",
     "deadline": "Not specified in text (application form required)",
+    "important_dates": [
+     "Before January 1, 2016 for service calculation"
+    ],
     "eligibility_criteria": [
-     "(i) Passed Class XII from recognized board/university",
-     "(ii) Two years Hindi proof reading experience at printing press/news agency",
-     "(iii) High school level Hindi as subject or medium of instruction"
+     "Must have completed Class XII from recognized board/university.",
+     "Two years Hindi proofreading experience at printing press or newspaper publisher.",
+     "High school level proficiency in Hindi as a subject or medium of instruction."
     ],
     "required_documents": [
-     "Life history form with supporting documents",
-     "Proof of educational qualifications and experience"
+     "Life history form (Annexure-1).",
+     "Supporting documents for education and experience claims."
     ],
     "application_procedure": [
-     "(i) Apply for the post via official notification link on Ministry website",
-     "(ii) Submit life history form along with required certificates to selection committee"
+     "Submit application via prescribed format attached to the circular.",
+     "Attach supporting documents with life history form."
     ]
    },
-   "summary": "This circular from the Indian Ministry of Law and Justice announces a direct recruitment for Proof Reader posts in Hindi. The positions are under Contractual Service (CS) with specific salary ranges.",
+   "summary": "This circular announces a recruitment vacancy for Proof Reader under the Department of Legislation, Ministry of Law and Justice. It outlines eligibility criteria including educational qualifications and specific Hindi proofreading experience.",
    "models": [
     "qwen3.5:4b"
    ],
    "ocr_pages": [],
-   "seconds": 27.0,
+   "seconds": 34.6,
    "checks": [
     {
      "kind": "field",
@@ -3781,9 +3788,9 @@
        "24 October 2025"
       ]
      },
-     "predicted": null,
-     "correct": false,
-     "error_category": "Missing extracted field",
+     "predicted": "24 October 2025",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -3797,7 +3804,7 @@
        "Proof Reader"
       ]
      },
-     "predicted": "The post to be filled on deputation is **Proof Reader** (प्रूफ रीडर) in the Raj Bhasha Khanda, Legislative Department, Ministry of Law and Justice. The pay matrix for this post is ₹25,500–₹81,100.",
+     "predicted": "The post to be filled on deputation is **Proof Reader** (प्रूफ रीडर) in the Raj Bhasha Section, Legislative Department, Ministry of Law and Justice. The pay matrix for this post is ₹25,500–₹81,100.",
      "correct": true,
      "error_category": "",
      "pages": [
@@ -3820,7 +3827,7 @@
      ]
     }
    ],
-   "fields_correct": false,
+   "fields_correct": true,
    "qa_correct": true
   },
   {
@@ -3860,7 +3867,7 @@
    },
    "fingerprint": "5a87cdf8b3a0dca1",
    "error": "",
-   "predicted_answer": "The pay matrix range for the Post Reader position on contract basis is **₹25,500 – ₹81,100**.",
+   "predicted_answer": "The pay matrix range for the Post Reader position on contract basis is **₹25,500 - ₹81,100**.",
    "predicted_pages": [
     1
    ],
@@ -3868,29 +3875,33 @@
    "predicted_fields": {
     "document_type": "Circular",
     "issuing_department": "Ministry of Law and Justice, India (Department of Legislation)",
-    "reference_number": "S.No. E-12026/1/2025-Admin",
+    "date": "24 October 2025",
+    "reference_number": "S.No. E-12026/1/2025-Administration",
     "amount": "Salary Matrix Rs. 25,500 - 81,100",
     "deadline": "Not specified in text (application form required)",
+    "important_dates": [
+     "Before January 1, 2016 for service calculation"
+    ],
     "eligibility_criteria": [
-     "(i) Passed Class XII from recognized board/university",
-     "(ii) Two years Hindi proof reading experience at printing press/news agency",
-     "(iii) High school level Hindi as subject or medium of instruction"
+     "Must have completed Class XII from recognized board/university.",
+     "Two years Hindi proofreading experience at printing press or newspaper publisher.",
+     "High school level proficiency in Hindi as a subject or medium of instruction."
     ],
     "required_documents": [
-     "Life history form with supporting documents",
-     "Proof of educational qualifications and experience"
+     "Life history form (Annexure-1).",
+     "Supporting documents for education and experience claims."
     ],
     "application_procedure": [
-     "(i) Apply for the post via official notification link on Ministry website",
-     "(ii) Submit life history form along with required certificates to selection committee"
+     "Submit application via prescribed format attached to the circular.",
+     "Attach supporting documents with life history form."
     ]
    },
-   "summary": "This circular from the Indian Ministry of Law and Justice announces a direct recruitment for Proof Reader posts in Hindi. The positions are under Contractual Service (CS) with specific salary ranges.",
+   "summary": "This circular announces a recruitment vacancy for Proof Reader under the Department of Legislation, Ministry of Law and Justice. It outlines eligibility criteria including educational qualifications and specific Hindi proofreading experience.",
    "models": [
     "qwen3.5:4b"
    ],
    "ocr_pages": [],
-   "seconds": 23.7,
+   "seconds": 32.3,
    "checks": [
     {
      "kind": "field",
@@ -3902,7 +3913,7 @@
        "12026/1/2025"
       ]
      },
-     "predicted": "S.No. E-12026/1/2025-Admin",
+     "predicted": "S.No. E-12026/1/2025-Administration",
      "correct": true,
      "error_category": "",
      "pages": [
@@ -3918,7 +3929,7 @@
        "25500-81100"
       ]
      },
-     "predicted": "The pay matrix range for the Post Reader position on contract basis is **₹25,500 – ₹81,100**.",
+     "predicted": "The pay matrix range for the Post Reader position on contract basis is **₹25,500 - ₹81,100**.",
      "correct": true,
      "error_category": "",
      "pages": [
@@ -3982,42 +3993,38 @@
    },
    "fingerprint": "cb017efd31470c95",
    "error": "",
-   "predicted_answer": "The issuing department was not found in the document.",
-   "predicted_pages": [],
+   "predicted_answer": "The document was issued by the **Department of State Educational Research and Training** (ಸಂಖ್ಯೆ : E-110911/ DSERT/NEP/ECCE/15/2026).",
+   "predicted_pages": [
+    1
+   ],
    "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
-    "document_title": "FLN Educational Scheme Notice (Karnataka)",
-    "document_type": "Scheme/Circular",
-    "issuing_department": "Government of Karnataka, Department of School Education and Literacy",
-    "reference_number": "Not explicitly stated as a single reference number; mentions SATS technical department.",
-    "amount": "No specific fees or amounts mentioned for the scheme itself.",
-    "deadline": "Ongoing/Continuous implementation implied by operational nature of FLN (Flood Level Notification) monitoring and educational activities described.",
+    "document_type": "Circular",
+    "issuing_department": "Department of State Educational Research and Training (DSERT)",
+    "date": "07/08/2026",
+    "reference_number": "E-110911/ DSERT/NEP/ECCE/15/2026-TECD",
     "important_dates": [
-     "2026-27 academic year context mentioned regarding school operations"
+     "17.12.2021 - Reference circular date"
     ],
     "eligibility_criteria": [
-     "Students from 4th to 10th standard",
-     "Families affected by floods or in flood-prone areas as implied by FLN (Flood Level Notification) focus",
-     "Schools under the Karnataka State Board of Secondary and Higher Education"
-    ],
-    "required_documents": [
-     "Proof of enrollment/attendance for students",
-     "Relevant school records showing impact of flooding on operations"
+     "Students studying in all primary and upper primary schools of the state during 2026-27 academic year",
+     "All students must achieve Initial Literacy and Numeracy (ILN) proficiency by end of 2026-27",
+     "Target: All students should attain ILN as per reference letter No.1 dated 17.12.2021"
     ],
     "application_procedure": [
-     "The document outlines operational guidelines rather than a formal application process; it details responsibilities of officials (BEO, BRC, ECO) and curriculum adjustments.",
-     "Schools must report flood status to the government technical department."
+     "School heads to formulate action plans from school level up to district level for implementing FLN program",
+     "District education officers and schools must organize various programs to help students achieve 95% ILN proficiency"
     ],
     "important_instructions": [
-     "Teachers should use simple language for reading comprehension exercises",
-     "Mathematics lessons must be adapted to 3-digit or 4-digit levels depending on grade",
-     "Officials (BEO/BRC/ECO) are responsible for monitoring and reporting FLN situations"
-    ],
-    "exceptions_or_special_conditions": [
-     "Curriculum adjustments based on flood impact; simplified teaching methods required during emergencies"
+     "All primary and upper primary school students are required to learn Kannada reading, writing, speaking",
+     "Students in grades 1-4 should read simple sentences/paragraphs with understanding and answer questions",
+     "Students in grades 1-4 must write simple sentences independently (3-5 sentences) using English for communication",
+     "Students from grade 6 to 10 should read/write numbers up to 4-digit level and perform basic operations",
+     "All students across all levels must solve word problems using basic mathematical operations",
+     "Application of math skills in daily life contexts like time, money, length and data is required"
     ]
    },
-   "summary": "This document is an educational notice from the Karnataka government regarding Flood Level Notification (FLN) protocols and a simplified curriculum scheme. It outlines responsibilities of school officials during floods and basic learning objectives for students.",
+   "summary": "The Department of State Educational Research and Training (DSERT) issued a directive on 07/08/2026 to ensure all Karnataka primary school students achieve Initial Literacy and Numeracy proficiency by August 2026. This follows previous efforts that failed to meet targets, requiring new action plans for schools and districts.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -4029,7 +4036,7 @@
     5,
     6
    ],
-   "seconds": 1443.1,
+   "seconds": 480.9,
    "checks": [
     {
      "kind": "field",
@@ -4041,9 +4048,9 @@
        "ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ"
       ]
      },
-     "predicted": "Government of Karnataka, Department of School Education and Literacy",
-     "correct": false,
-     "error_category": "Incorrect extracted value",
+     "predicted": "Department of State Educational Research and Training (DSERT)",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4058,9 +4065,9 @@
        "ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ"
       ]
      },
-     "predicted": "The issuing department was not found in the document.",
-     "correct": false,
-     "error_category": "OCR or document-reading failure",
+     "predicted": "The document was issued by the **Department of State Educational Research and Training** (ಸಂಖ್ಯೆ : E-110911/ DSERT/NEP/ECCE/15/2026).",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4071,16 +4078,18 @@
      "expected": [
       1
      ],
-     "predicted": [],
-     "correct": false,
-     "error_category": "Wrong or missing page reference",
+     "predicted": [
+      1
+     ],
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
     }
    ],
-   "fields_correct": false,
-   "qa_correct": false
+   "fields_correct": true,
+   "qa_correct": true
   },
   {
    "case": {
@@ -4113,42 +4122,38 @@
    },
    "fingerprint": "9665af1af02866ac",
    "error": "",
-   "predicted_answer": "The document does not contain information about a 'bridge programme' or its duration in June.",
-   "predicted_pages": [],
+   "predicted_answer": "The Bridge Programme (ಸೇತುಬಂಧ ಕಾರ್ಯಕ್ರಮ) was conducted for **15 days** during June.",
+   "predicted_pages": [
+    1
+   ],
    "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
-    "document_title": "FLN Educational Scheme Notice (Karnataka)",
-    "document_type": "Scheme/Circular",
-    "issuing_department": "Government of Karnataka, Department of School Education and Literacy",
-    "reference_number": "Not explicitly stated as a single reference number; mentions SATS technical department.",
-    "amount": "No specific fees or amounts mentioned for the scheme itself.",
-    "deadline": "Ongoing/Continuous implementation implied by operational nature of FLN (Flood Level Notification) monitoring and educational activities described.",
+    "document_type": "Circular",
+    "issuing_department": "Department of State Educational Research and Training (DSERT)",
+    "date": "07/08/2026",
+    "reference_number": "E-110911/ DSERT/NEP/ECCE/15/2026-TECD",
     "important_dates": [
-     "2026-27 academic year context mentioned regarding school operations"
+     "17.12.2021 - Reference circular date"
     ],
     "eligibility_criteria": [
-     "Students from 4th to 10th standard",
-     "Families affected by floods or in flood-prone areas as implied by FLN (Flood Level Notification) focus",
-     "Schools under the Karnataka State Board of Secondary and Higher Education"
-    ],
-    "required_documents": [
-     "Proof of enrollment/attendance for students",
-     "Relevant school records showing impact of flooding on operations"
+     "Students studying in all primary and upper primary schools of the state during 2026-27 academic year",
+     "All students must achieve Initial Literacy and Numeracy (ILN) proficiency by end of 2026-27",
+     "Target: All students should attain ILN as per reference letter No.1 dated 17.12.2021"
     ],
     "application_procedure": [
-     "The document outlines operational guidelines rather than a formal application process; it details responsibilities of officials (BEO, BRC, ECO) and curriculum adjustments.",
-     "Schools must report flood status to the government technical department."
+     "School heads to formulate action plans from school level up to district level for implementing FLN program",
+     "District education officers and schools must organize various programs to help students achieve 95% ILN proficiency"
     ],
     "important_instructions": [
-     "Teachers should use simple language for reading comprehension exercises",
-     "Mathematics lessons must be adapted to 3-digit or 4-digit levels depending on grade",
-     "Officials (BEO/BRC/ECO) are responsible for monitoring and reporting FLN situations"
-    ],
-    "exceptions_or_special_conditions": [
-     "Curriculum adjustments based on flood impact; simplified teaching methods required during emergencies"
+     "All primary and upper primary school students are required to learn Kannada reading, writing, speaking",
+     "Students in grades 1-4 should read simple sentences/paragraphs with understanding and answer questions",
+     "Students in grades 1-4 must write simple sentences independently (3-5 sentences) using English for communication",
+     "Students from grade 6 to 10 should read/write numbers up to 4-digit level and perform basic operations",
+     "All students across all levels must solve word problems using basic mathematical operations",
+     "Application of math skills in daily life contexts like time, money, length and data is required"
     ]
    },
-   "summary": "This document is an educational notice from the Karnataka government regarding Flood Level Notification (FLN) protocols and a simplified curriculum scheme. It outlines responsibilities of school officials during floods and basic learning objectives for students.",
+   "summary": "The Department of State Educational Research and Training (DSERT) issued a directive on 07/08/2026 to ensure all Karnataka primary school students achieve Initial Literacy and Numeracy proficiency by August 2026. This follows previous efforts that failed to meet targets, requiring new action plans for schools and districts.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -4160,15 +4165,15 @@
     5,
     6
    ],
-   "seconds": 21.1,
+   "seconds": 57.7,
    "checks": [
     {
      "kind": "field",
      "check": "reference_number",
      "expected": "E-110911/DSERT/NEP/ECCE/15/2026-TECD",
-     "predicted": "Not explicitly stated as a single reference number; mentions SATS technical department.",
-     "correct": false,
-     "error_category": "Incorrect extracted value",
+     "predicted": "E-110911/ DSERT/NEP/ECCE/15/2026-TECD",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4182,9 +4187,9 @@
        "15 ದಿನಗಳು"
       ]
      },
-     "predicted": "The document does not contain information about a 'bridge programme' or its duration in June.",
-     "correct": false,
-     "error_category": "OCR or document-reading failure",
+     "predicted": "The Bridge Programme (ಸೇತುಬಂಧ ಕಾರ್ಯಕ್ರಮ) was conducted for **15 days** during June.",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4195,16 +4200,18 @@
      "expected": [
       1
      ],
-     "predicted": [],
-     "correct": false,
-     "error_category": "Wrong or missing page reference",
+     "predicted": [
+      1
+     ],
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
     }
    ],
-   "fields_correct": false,
-   "qa_correct": false
+   "fields_correct": true,
+   "qa_correct": true
   },
   {
    "case": {
@@ -4238,42 +4245,38 @@
    },
    "fingerprint": "ea823e04a4f76b30",
    "error": "",
-   "predicted_answer": "The document does not specify a particular day (such as 'Saturday') for holding the head teachers' meeting regarding FLN.",
-   "predicted_pages": [],
+   "predicted_answer": "The document states that the Head Teachers' Meeting regarding FLN (Functional Literacy Numeracy) achievement should be held **on the second Saturday** of every month. This is explicitly mentioned under the responsibilities of Cluster and Block levels.",
+   "predicted_pages": [
+    2
+   ],
    "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
-    "document_title": "FLN Educational Scheme Notice (Karnataka)",
-    "document_type": "Scheme/Circular",
-    "issuing_department": "Government of Karnataka, Department of School Education and Literacy",
-    "reference_number": "Not explicitly stated as a single reference number; mentions SATS technical department.",
-    "amount": "No specific fees or amounts mentioned for the scheme itself.",
-    "deadline": "Ongoing/Continuous implementation implied by operational nature of FLN (Flood Level Notification) monitoring and educational activities described.",
+    "document_type": "Circular",
+    "issuing_department": "Department of State Educational Research and Training (DSERT)",
+    "date": "07/08/2026",
+    "reference_number": "E-110911/ DSERT/NEP/ECCE/15/2026-TECD",
     "important_dates": [
-     "2026-27 academic year context mentioned regarding school operations"
+     "17.12.2021 - Reference circular date"
     ],
     "eligibility_criteria": [
-     "Students from 4th to 10th standard",
-     "Families affected by floods or in flood-prone areas as implied by FLN (Flood Level Notification) focus",
-     "Schools under the Karnataka State Board of Secondary and Higher Education"
-    ],
-    "required_documents": [
-     "Proof of enrollment/attendance for students",
-     "Relevant school records showing impact of flooding on operations"
+     "Students studying in all primary and upper primary schools of the state during 2026-27 academic year",
+     "All students must achieve Initial Literacy and Numeracy (ILN) proficiency by end of 2026-27",
+     "Target: All students should attain ILN as per reference letter No.1 dated 17.12.2021"
     ],
     "application_procedure": [
-     "The document outlines operational guidelines rather than a formal application process; it details responsibilities of officials (BEO, BRC, ECO) and curriculum adjustments.",
-     "Schools must report flood status to the government technical department."
+     "School heads to formulate action plans from school level up to district level for implementing FLN program",
+     "District education officers and schools must organize various programs to help students achieve 95% ILN proficiency"
     ],
     "important_instructions": [
-     "Teachers should use simple language for reading comprehension exercises",
-     "Mathematics lessons must be adapted to 3-digit or 4-digit levels depending on grade",
-     "Officials (BEO/BRC/ECO) are responsible for monitoring and reporting FLN situations"
-    ],
-    "exceptions_or_special_conditions": [
-     "Curriculum adjustments based on flood impact; simplified teaching methods required during emergencies"
+     "All primary and upper primary school students are required to learn Kannada reading, writing, speaking",
+     "Students in grades 1-4 should read simple sentences/paragraphs with understanding and answer questions",
+     "Students in grades 1-4 must write simple sentences independently (3-5 sentences) using English for communication",
+     "Students from grade 6 to 10 should read/write numbers up to 4-digit level and perform basic operations",
+     "All students across all levels must solve word problems using basic mathematical operations",
+     "Application of math skills in daily life contexts like time, money, length and data is required"
     ]
    },
-   "summary": "This document is an educational notice from the Karnataka government regarding Flood Level Notification (FLN) protocols and a simplified curriculum scheme. It outlines responsibilities of school officials during floods and basic learning objectives for students.",
+   "summary": "The Department of State Educational Research and Training (DSERT) issued a directive on 07/08/2026 to ensure all Karnataka primary school students achieve Initial Literacy and Numeracy proficiency by August 2026. This follows previous efforts that failed to meet targets, requiring new action plans for schools and districts.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -4285,15 +4288,15 @@
     5,
     6
    ],
-   "seconds": 52.0,
+   "seconds": 69.1,
    "checks": [
     {
      "kind": "field",
      "check": "date",
      "expected": "07/08/2026",
-     "predicted": null,
-     "correct": false,
-     "error_category": "OCR or document-reading failure",
+     "predicted": "07/08/2026",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4308,9 +4311,9 @@
        "2ನೇ ಶನಿವಾರ"
       ]
      },
-     "predicted": "The document does not specify a particular day (such as 'Saturday') for holding the head teachers' meeting regarding FLN.",
-     "correct": false,
-     "error_category": "Answer not found in document (model abstained)",
+     "predicted": "The document states that the Head Teachers' Meeting regarding FLN (Functional Literacy Numeracy) achievement should be held **on the second Saturday** of every month. This is explicitly mentioned under the responsibilities of Cluster and Block levels.",
+     "correct": true,
+     "error_category": "",
      "pages": [
       2
      ]
@@ -4321,16 +4324,18 @@
      "expected": [
       2
      ],
-     "predicted": [],
-     "correct": false,
-     "error_category": "Wrong or missing page reference",
+     "predicted": [
+      2
+     ],
+     "correct": true,
+     "error_category": "",
      "pages": [
       2
      ]
     }
    ],
-   "fields_correct": false,
-   "qa_correct": false
+   "fields_correct": true,
+   "qa_correct": true
   },
   {
    "case": {
@@ -4358,18 +4363,18 @@
    },
    "fingerprint": "53b5deec6413011c",
    "error": "",
-   "predicted_answer": "The date of this circular is **09-06-2026**.",
+   "predicted_answer": "The document states that the number (ಸಂಖ್ಯೆ) for this circular is E- 8146 DSERT/EVG/ ಸ೦ಭ್ರಮ ಶನಿವಾರ/2026-27, but it does not explicitly state a specific date of issue. It references other documents with dates such as **03-05-2019**, **28-10-2022**, and mentions the academic year starting from **June 2026** for the first module.",
    "predicted_pages": [
     1
    ],
    "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
-    "document_type": "Notice",
-    "issuing_department": "Department of State Educational Research and Training, Karnataka Government",
+    "document_type": "Circular",
+    "issuing_department": "Department of State Educational Research and Training (DSERT)",
     "date": "09-06-2026",
-    "reference_number": "E-8146 DSERT/EVG/ ಸಾಧುವ ತೀವರತ/2026-27"
+    "reference_number": "E - 8146 DSERT/EVG/ ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27"
    },
-   "summary": "This notice announces the Bagless Day scholarship scheme for 2026-27 issued by Karnataka's Department of State Educational Research and Training. It details eligibility based on approved grievances from prior years.",
+   "summary": "The Department of State Educational Research and Training issued this circular to mandate a 'bag-less' educational program across all Karnataka schools for academic year 2026-27. The initiative aims to reduce school bags and promote civic awareness through student-led activities.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -4377,7 +4382,7 @@
     1,
     2
    ],
-   "seconds": 612.1,
+   "seconds": 190.5,
    "checks": [
     {
      "kind": "field",
@@ -4394,9 +4399,9 @@
      "kind": "qa",
      "check": "answer",
      "expected": "09-06-2026",
-     "predicted": "The date of this circular is **09-06-2026**.",
-     "correct": true,
-     "error_category": "",
+     "predicted": "The document states that the number (ಸಂಖ್ಯೆ) for this circular is E- 8146 DSERT/EVG/ ಸ೦ಭ್ರಮ ಶನಿವಾರ/2026-27, but it does not explicitly state a specific date of issue. It references other documents with dates such as **03-05-2019**, **28-10-2022**, and mentions the academic year starting from **June 2026** for the first module.",
+     "correct": false,
+     "error_category": "Incorrect answer",
      "pages": [
       1
      ]
@@ -4418,7 +4423,7 @@
     }
    ],
    "fields_correct": true,
-   "qa_correct": true
+   "qa_correct": false
   },
   {
    "case": {
@@ -4456,16 +4461,18 @@
    },
    "fingerprint": "8a27c5149d100ebc",
    "error": "",
-   "predicted_answer": "The document does not state how many self-learning activity modules were prepared.",
-   "predicted_pages": [],
+   "predicted_answer": "10",
+   "predicted_pages": [
+    1
+   ],
    "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
-    "document_type": "Notice",
-    "issuing_department": "Department of State Educational Research and Training, Karnataka Government",
+    "document_type": "Circular",
+    "issuing_department": "Department of State Educational Research and Training (DSERT)",
     "date": "09-06-2026",
-    "reference_number": "E-8146 DSERT/EVG/ ಸಾಧುವ ತೀವರತ/2026-27"
+    "reference_number": "E - 8146 DSERT/EVG/ ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27"
    },
-   "summary": "This notice announces the Bagless Day scholarship scheme for 2026-27 issued by Karnataka's Department of State Educational Research and Training. It details eligibility based on approved grievances from prior years.",
+   "summary": "The Department of State Educational Research and Training issued this circular to mandate a 'bag-less' educational program across all Karnataka schools for academic year 2026-27. The initiative aims to reduce school bags and promote civic awareness through student-led activities.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -4473,7 +4480,7 @@
     1,
     2
    ],
-   "seconds": 23.1,
+   "seconds": 22.8,
    "checks": [
     {
      "kind": "field",
@@ -4484,9 +4491,9 @@
        "E-8146 DSERT/EVG/Sambhrama Shanivara/2026-27"
       ]
      },
-     "predicted": "E-8146 DSERT/EVG/ ಸಾಧುವ ತೀವರತ/2026-27",
-     "correct": false,
-     "error_category": "Incorrect extracted value",
+     "predicted": "E - 8146 DSERT/EVG/ ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4500,9 +4507,9 @@
        "ten"
       ]
      },
-     "predicted": "The document does not state how many self-learning activity modules were prepared.",
-     "correct": false,
-     "error_category": "Answer not found in document (model abstained)",
+     "predicted": "10",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4513,16 +4520,18 @@
      "expected": [
       1
      ],
-     "predicted": [],
-     "correct": false,
-     "error_category": "Wrong or missing page reference",
+     "predicted": [
+      1
+     ],
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
     }
    ],
-   "fields_correct": false,
-   "qa_correct": false
+   "fields_correct": true,
+   "qa_correct": true
   },
   {
    "case": {
@@ -4561,18 +4570,18 @@
    },
    "fingerprint": "974edfbb598f6dc8",
    "error": "",
-   "predicted_answer": "The **Jan-2027** (January 2027) module corresponds to entry number **8**, titled '**ರನ್ ಸಂದೇತ**' (**Run Sandeeta**), with the reference code **ಜಾನವ - 2027**.",
+   "predicted_answer": "Module **8** titled \"Road Safety\" (ರಸ್ತೆ ಸುರಕ್ಷತೆ) is scheduled for **January - 2027**.",
    "predicted_pages": [
     1
    ],
    "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
-    "document_type": "Notice",
-    "issuing_department": "Department of State Educational Research and Training, Karnataka Government",
+    "document_type": "Circular",
+    "issuing_department": "Department of State Educational Research and Training (DSERT)",
     "date": "09-06-2026",
-    "reference_number": "E-8146 DSERT/EVG/ ಸಾಧುವ ತೀವರತ/2026-27"
+    "reference_number": "E - 8146 DSERT/EVG/ ಸಂಭ್ರಮ ಶನಿವಾರ/2026-27"
    },
-   "summary": "This notice announces the Bagless Day scholarship scheme for 2026-27 issued by Karnataka's Department of State Educational Research and Training. It details eligibility based on approved grievances from prior years.",
+   "summary": "The Department of State Educational Research and Training issued this circular to mandate a 'bag-less' educational program across all Karnataka schools for academic year 2026-27. The initiative aims to reduce school bags and promote civic awareness through student-led activities.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -4580,7 +4589,7 @@
     1,
     2
    ],
-   "seconds": 20.5,
+   "seconds": 19.8,
    "checks": [
     {
      "kind": "field",
@@ -4592,7 +4601,7 @@
        "ರಾಜ್ಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಇಲಾಖೆ"
       ]
      },
-     "predicted": "Department of State Educational Research and Training, Karnataka Government",
+     "predicted": "Department of State Educational Research and Training (DSERT)",
      "correct": true,
      "error_category": "",
      "pages": [
@@ -4608,9 +4617,9 @@
        "ರಸ್ತೆ ಸುರಕ್ಷತೆ"
       ]
      },
-     "predicted": "The **Jan-2027** (January 2027) module corresponds to entry number **8**, titled '**ರನ್ ಸಂದೇತ**' (**Run Sandeeta**), with the reference code **ಜಾನವ - 2027**.",
-     "correct": false,
-     "error_category": "Incorrect answer",
+     "predicted": "Module **8** titled \"Road Safety\" (ರಸ್ತೆ ಸುರಕ್ಷತೆ) is scheduled for **January - 2027**.",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -4632,7 +4641,7 @@
     }
    ],
    "fields_correct": true,
-   "qa_correct": false
+   "qa_correct": true
   },
   {
    "case": {
@@ -5919,18 +5928,16 @@
    },
    "fingerprint": "6c66fed743a19312",
    "error": "",
-   "predicted_answer": "The Government Order (G.O.) number mentioned in the document is **KERBIL/2012/45073**.",
+   "predicted_answer": "The Government Order (G.O.) number for this notification is **145/2013/൫പാ.വി.൮വ.**",
    "predicted_pages": [
     1
    ],
-   "answer_method": "whole document + model",
+   "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
     "document_type": "Notice",
-    "issuing_department": "Government of Kerala, Ministry of Education (Barathvidyotsa Department)",
-    "date": "24th April 2013",
-    "reference_number": "KERBIL/2012/45073 / KL/TV(N)/634/2012-14"
+    "issuing_department": "Government of Kerala, Department of Public Education (General)"
    },
-   "summary": "This is an official notice from the Government of Kerala regarding marriage registration procedures issued by the Barathvidyotsa Department.",
+   "summary": "This notice from the Kerala Government's Department of Public Education outlines time limits and authority levels required to appeal various administrative decisions. It applies to officers, employees, and applicants seeking redressal through specific departments.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -5939,7 +5946,7 @@
     2,
     3
    ],
-   "seconds": 580.7,
+   "seconds": 159.0,
    "checks": [
     {
      "kind": "field",
@@ -5950,9 +5957,9 @@
        "145/2013"
       ]
      },
-     "predicted": "KERBIL/2012/45073 / KL/TV(N)/634/2012-14",
+     "predicted": null,
      "correct": false,
-     "error_category": "Incorrect extracted value",
+     "error_category": "Missing extracted field",
      "pages": [
       1
      ]
@@ -5961,9 +5968,9 @@
      "kind": "qa",
      "check": "answer",
      "expected": "145/2013",
-     "predicted": "The Government Order (G.O.) number mentioned in the document is **KERBIL/2012/45073**.",
-     "correct": false,
-     "error_category": "Incorrect answer",
+     "predicted": "The Government Order (G.O.) number for this notification is **145/2013/൫പാ.വി.൮വ.**",
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]
@@ -5985,7 +5992,7 @@
     }
    ],
    "fields_correct": false,
-   "qa_correct": false
+   "qa_correct": true
   },
   {
    "case": {
@@ -6025,16 +6032,16 @@
    },
    "fingerprint": "8352a8caf89f243f",
    "error": "",
-   "predicted_answer": "The document does not explicitly state under which specific Act (e.g., Indian Marriage Laws) the notification was issued.",
-   "predicted_pages": [],
-   "answer_method": "whole document + model",
+   "predicted_answer": "This notification is issued under **Section 2(0)** of the Kerala State Service Eligibility Rules (2012-921) [Page 1].",
+   "predicted_pages": [
+    1
+   ],
+   "answer_method": "retrieved excerpts + model",
    "predicted_fields": {
     "document_type": "Notice",
-    "issuing_department": "Government of Kerala, Ministry of Education (Barathvidyotsa Department)",
-    "date": "24th April 2013",
-    "reference_number": "KERBIL/2012/45073 / KL/TV(N)/634/2012-14"
+    "issuing_department": "Government of Kerala, Department of Public Education (General)"
    },
-   "summary": "This is an official notice from the Government of Kerala regarding marriage registration procedures issued by the Barathvidyotsa Department.",
+   "summary": "This notice from the Kerala Government's Department of Public Education outlines time limits and authority levels required to appeal various administrative decisions. It applies to officers, employees, and applicants seeking redressal through specific departments.",
    "models": [
     "qwen3.5:4b"
    ],
@@ -6043,7 +6050,7 @@
     2,
     3
    ],
-   "seconds": 23.6,
+   "seconds": 24.8,
    "checks": [
     {
      "kind": "field",
@@ -6056,7 +6063,7 @@
        "Government of Kerala"
       ]
      },
-     "predicted": "Government of Kerala, Ministry of Education (Barathvidyotsa Department)",
+     "predicted": "Government of Kerala, Department of Public Education (General)",
      "correct": true,
      "error_category": "",
      "pages": [
@@ -6072,7 +6079,7 @@
        "സേവനാവകാശ"
       ]
      },
-     "predicted": "The document does not explicitly state under which specific Act (e.g., Indian Marriage Laws) the notification was issued.",
+     "predicted": "This notification is issued under **Section 2(0)** of the Kerala State Service Eligibility Rules (2012-921) [Page 1].",
      "correct": false,
      "error_category": "Incorrect answer",
      "pages": [
@@ -6085,9 +6092,11 @@
      "expected": [
       1
      ],
-     "predicted": [],
-     "correct": false,
-     "error_category": "Wrong or missing page reference",
+     "predicted": [
+      1
+     ],
+     "correct": true,
+     "error_category": "",
      "pages": [
       1
      ]

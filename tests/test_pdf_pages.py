@@ -82,6 +82,13 @@ class PageClassificationTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def setUp(self) -> None:
+        # These tests cover the vision-model OCR path; a locally installed
+        # Tesseract would otherwise read the pages first.
+        patcher = patch.object(processing, "local_ocr", return_value="")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     @patch("document_processing._request_analysis", side_effect=fake_model)
     def test_only_scanned_pages_reach_the_vision_model(self, request_analysis) -> None:
         kinds = "t" * 60 + "s" + "b" + "t" * 65  # 127 pages: 125 text, 1 scanned, 1 blank

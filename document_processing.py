@@ -75,9 +75,24 @@ def parse_result(text: str) -> dict[str, Any]:
     raise RuntimeError("The model response was not valid JSON. Retry the analysis; if it keeps failing, check the configured model.")
 
 
+_INDIAN_DIGITS = {start + offset: str(offset) for start in (0x0966, 0x0CE6, 0x0BE6, 0x0C66, 0x0D66, 0x0A66) for offset in range(10)}
+# Month names in Hindi, Kannada, Tamil, Telugu and Malayalam, so a date printed
+# as "24 अक्टूबर, 2025" is recognised as the same date as "24 October 2025".
+_INDIAN_MONTHS = {
+    "January": "जनवरी ಜನವರಿ ஜனவரி జనవరి ജനുവരി", "February": "फ़रवरी फरवरी ಫೆಬ್ರವರಿ பிப்ரவரி ఫిబ్రవరి ഫെബ്രുവരി",
+    "March": "मार्च ಮಾರ್ಚ್ மார்ச் మార్చి മാർച്ച്", "April": "अप्रैल ಏಪ್ರಿಲ್ ஏப்ரல் ఏప్రిల్ ഏപ്രിൽ", "May": "मई ಮೇ மே మే മേയ്",
+    "June": "जून ಜೂನ್ ஜூன் జూన్ ജൂൺ", "July": "जुलाई ಜುಲೈ ஜூலை జూలై ജൂലൈ", "August": "अगस्त ಆಗಸ್ಟ್ ஆகஸ்ட் ఆగస్టు ഓഗസ്റ്റ്",
+    "September": "सितंबर सितम्बर ಸೆಪ್ಟೆಂಬರ್ செப்டம்பர் సెప్టెంబర్ സെപ്റ്റംബർ", "October": "अक्टूबर ಅಕ್ಟೋಬರ್ அக்டோபர் అక్టోబర్ ഒക്ടോബർ",
+    "November": "नवंबर नवम्बर ನವೆಂಬರ್ நவம்பர் నవంబర్ നവംബർ", "December": "दिसंबर दिसम्बर ಡಿಸೆಂಬರ್ டிசம்பர் డిసెంబర్ ഡിസംബർ",
+}
+_INDIAN_MONTH_PATTERN = re.compile("|".join(sorted((re.escape(name) for names in _INDIAN_MONTHS.values() for name in names.split()), key=len, reverse=True)))
+_INDIAN_MONTH_ENGLISH = {name: english for english, names in _INDIAN_MONTHS.items() for name in names.split()}
+
+
 def _normalized_dates(value: Any) -> set[str]:
     """Return ISO dates found in structured model values for source checking."""
     text = json.dumps(value, ensure_ascii=False) if isinstance(value, (dict, list)) else str(value or "")
+    text = _INDIAN_MONTH_PATTERN.sub(lambda match: _INDIAN_MONTH_ENGLISH[match.group(0)], text.translate(_INDIAN_DIGITS))
     patterns = (
         (r"\b\d{4}-\d{1,2}-\d{1,2}\b", ("%Y-%m-%d",)),
         (r"\b\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}\b", ("%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y", "%m/%d/%Y", "%m-%d-%Y", "%d/%m/%y", "%d-%m-%y", "%d.%m.%y")),
@@ -397,8 +412,16 @@ def render_pdf_page(pdf_bytes: bytes, page_number: int, scale: float = 2.0) -> I
 # Stage 2: OCR for scanned pages only
 # ---------------------------------------------------------------------------
 
+def _tesseract_cmd() -> str:
+    """The Tesseract executable: on PATH, TESSERACT_CMD, or the default Windows install."""
+    for candidate in (shutil.which("tesseract"), os.getenv("TESSERACT_CMD", "").strip(), r"C:\Program Files\Tesseract-OCR\tesseract.exe"):
+        if candidate and os.path.isfile(candidate):
+            return candidate
+    return ""
+
+
 def tesseract_available() -> bool:
-    if not shutil.which("tesseract"):
+    if not _tesseract_cmd():
         return False
     try:
         import pytesseract  # noqa: F401
@@ -407,18 +430,36 @@ def tesseract_available() -> bool:
     return True
 
 
+_SCRIPT_LANGUAGE = {"Devanagari": "hin", "Kannada": "kan", "Tamil": "tam", "Telugu": "tel", "Malayalam": "mal", "Gurmukhi": "pan"}
+
+
+def _page_languages(pytesseract: Any, image: Image.Image, available: set[str], requested: list[str]) -> list[str]:
+    """The page's own script language plus English, detected with Tesseract OSD.
+
+    Reading with every language pack at once is slow and mixes up scripts, so
+    all requested languages are used only when the script cannot be detected.
+    """
+    try:
+        script = re.search(r"Script:\s*(\w+)", pytesseract.image_to_osd(image, config="--psm 0")).group(1)
+    except Exception:  # noqa: BLE001 - too little text for OSD; fall back below
+        script = ""
+    language = _SCRIPT_LANGUAGE.get(script)
+    chosen = ["eng"] if script == "Latin" else [language, "eng"] if language else requested
+    return [lang for lang in chosen if lang in available] or [lang for lang in requested if lang in available] or sorted(available - {"osd"})
+
+
 def local_ocr(images: list[Image.Image]) -> str:
     """Use optional local Tesseract OCR when its executable and Python wrapper exist."""
-    if not shutil.which("tesseract"):
+    command = _tesseract_cmd()
+    if not command:
         return ""
     try:
         import pytesseract
+        pytesseract.pytesseract.tesseract_cmd = command
         available = set(pytesseract.get_languages(config=""))
-        requested = [part.strip() for part in os.getenv("TESSERACT_LANGS", "eng+hin+kan+tam+tel+mal").split("+") if part.strip()]
-        selected = [language for language in requested if language in available]
-        if not selected:
-            selected = sorted(available)
-        return "\n\n".join(pytesseract.image_to_string(image, lang="+".join(selected)) for image in images).strip()
+        requested = [part.strip() for part in os.getenv("TESSERACT_LANGS", "eng+hin+kan+tam+tel+mal+pan").split("+") if part.strip()]
+        return "\n\n".join(pytesseract.image_to_string(image, lang="+".join(_page_languages(pytesseract, image, available, requested)))
+                           for image in images).strip()
     except (ImportError, OSError, RuntimeError):
         return ""
 
