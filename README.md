@@ -156,6 +156,18 @@ py -3.11 evaluation/run_evaluation.py --report   # rebuild the report from saved
 - **Scoring** (`evaluation/scoring.py`, also explained on the dashboard): normalized matching for values, where case, spacing, punctuation and date or amount formats don't matter but numbers must be identical. Longer answers also accept a paraphrase with content-word F1 ≥ 0.7 and recall ≥ 0.75, with identical numbers. Page-reference accuracy is scored separately. Model confidence is never used.
 - **Outputs:** `evaluation/results/CS3235-evaluation-report.md`, `evaluation-results.csv` and `evaluation-results.json`. They contain only results from completed runs, and a partial run is labelled as such.
 
+### Results (all 45 test cases, `qwen3.5:4b` on a CPU-only laptop)
+
+| Metric | Result |
+| --- | --- |
+| Field-extraction accuracy | **64.4%** (29 of 45) |
+| QA accuracy | **66.7%** (30 of 45) |
+| Answer cited the correct page | 66.7% |
+| Processing errors | 0 |
+| English documents (25 cases) | field 76.0%, QA 88.0% |
+
+Most wrong results have two root causes: scanned Kannada and Malayalam pages that the 4B vision model read badly (10 of 31 wrong checks), and long documents where the right page never reached the model (10). The full failure analysis is in the [project report](docs/PatraAI_CS3235_Report.pdf), Section 5.4.
+
 Other command-line checks:
 
 ```powershell
