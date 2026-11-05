@@ -12,6 +12,7 @@ evaluation/results/cache/
 # Editor and tool artefacts
 tempCodeRunnerFile.*
 /~/
-# Word lock files and the superseded report draft (final report is in docs/)
+# Word lock files, and the local copy of the report (the tracked copy is in docs/)
 ~$*
-PatraAI_CS3235_Report_DRAFT.docx
+/PatraAI_CS3235_Report.docx
+/PatraAI_CS3235_Report.pdf
